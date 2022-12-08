@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+
+#navbar {
+    font-size: 28pt;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:99;
+    background-color: transparent;
+
+}
+
+.homeScreen {
+    min-height: 100vh;
+    background-image: url(img/green.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+.homeText {
+    position:absolute;
+    top:40%;
+    left:30%;
+
+}
+.homeScreen h1 {
+    font-size:120pt;
+    font-weight: 800;
+    text-align: center;
+    color:whitesmoke;
+
+}
+.homeScreen span {
+    font-size:120pt;
+    font-weight: 800;
+    color: #214832;
+
+}
+.homeScreen:before {
+    content: '';
+    position:absolute;
+    box-sizing: border-box;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.cardSpace {
+    margin-top: 20px;
+    display:flex;
+    
+}
+
+.card {
+    height:400px;
+    width:500px;
+
+}
+.cards {
+    transition: all 1s ease-in-out; 
+
+}
+.cards :hover {
+    transform: scale(1.1); 
+
+}
+
+.card {
+    border-radius: 32px;
+    margin-left: 80px;
+}
+
+.tagTitle {
+    border-radius: 16px;
+    color:black;
+    width:max-content;
+    height:70px;
+    border: 2px solid black;
+    font-weight:300;
+    font-size:24pt;
+    background-color: whitesmoke;
+    margin-left:50px;
+    margin-top:60px;
+    margin-bottom:40px;
+
+}
