@@ -64,6 +64,7 @@ function favRecipe() {
     recipeBox.appendChild(recipeType)
     recipeBox.appendChild(line)
 
+    $('.recipes').fadeOut(100) //
 
     $('.recipes').fadeIn(1000) //
 
