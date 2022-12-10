@@ -57,8 +57,8 @@ body {
 
 
 .card {
-    height:500px;
-    width:500px;
+    height:270px;
+    width:200px;
     margin-left: 80px;
     margin-bottom:40px;
     border:1px solid black;
@@ -74,7 +74,7 @@ body {
 
 .colorTitle {
     font-weight:500;
-    font-size:60pt;
+    font-size:30pt;
     margin-left:80px;
     margin-top:60px;
     margin-bottom:40px;

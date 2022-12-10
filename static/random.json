@@ -1,0 +1,107 @@
+{"brocolli": {
+    "color": "green",
+    "tag": "Best way to deal with lifestyle diseases",
+    "info": "Broccoli is not only rich in vitamins and minerals, but also has various functional properties and is a vegetable with strong antioxidant ability and high nutritional density",
+    "nutrient": ["beta-carotine", "Vitamin E", "Vitamin K", "Vitamin B", "Folic Acid", "Vitamin C"],
+    "best time": [11,3],
+    "how to choose": "The buds are not spread out and densely clustered. The color is dark green and color of the stem cross-section remains unchanged",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+},
+"Asparagus": {
+    "color": "green",
+    "tag": "Effective in recovering from fatigue",
+    "info": "Asparagus contains beta-carotene, which acts as an antioxidant, folic acid, which is effective in preenting anemia, dietary fiber, and oligosaccharide, which are indespensable for improving the intestinal environment",
+    "nutrient": ["beta-carotine", "Vitamin E", "Vitamin B", "Folic Acid", "Vitamin C", "Potassium", "Dietary fiber"],
+    "best time": [5,6],
+    "how to choose": "Choose one that has a vivid green color and is elastic overall. Avoid the crumpled tips of the buds",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+},
+"Avocado": {
+    "color": "green",
+    "tag": "High in Nutrients",
+    "info": "Avocado is not a vegetable, but it is used in cooking like vegetables because it has a deep taste and is nutritious enough to be called a butter in the forest",
+    "nutrient": ["Vitamin E", "Vitamin B", "Folic Acid", "Vitamin C", "Potassium", "Dietary fiber"],
+    "best time": [1,12],
+    "how to choose": "Choose one that is glossy and elastic on the outside. The darker the outside is, the better it is.",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+},
+"Pepper": {
+    "color":"green",
+    "tag": "Effective in recovering from fatigue",
+    "info": "Green bell peppers, commonly known as peppers, are harvested undercooked. However, it has a significantly higher nutritional value and is rich in antioxidant vitamins",
+    "nutrient": ["beta-carotine", "Vitamin E",  "Vitamin C", "Potassium", "Dietary fiber"],
+    "best time": [6,9],
+    "how to choose": "Choose one whose skin is elastic, glossy, and whose tip is not discolored",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+},
+"Cucumber": {
+    "color":"green",
+    "tag": "Effective in edema",
+    "info": "Cucumber is characterized by its fresh and crunchy texture and is an essential vegetables to have on the table during the summer.",
+    "nutrient": ["beta-carotine", "Vitamin C", "Potassium"],
+    "best time": [5,8],
+    "how to choose": "Choose one that has a clear surface and is not dark on the tip",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+},
+"Ginger": {
+    "color":"white",
+    "tag": "Excellent for stamina",
+    "info": "Garlic is characterized by a particularly high fatigue recovery effect because it contains a substanced called alithiamine, the source of stamina. In addition, it contains Vitamin B12, which is essential for protein metabolism, so it can also keep the skin and mucous membrances healthy",
+    "nutrient": ["Vitamin B"],
+    "best time": [1,12],
+    "how to choose": "Pick a big, heavy and round one with a strong tip",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+},
+"Bean Sprouts": {
+    "color": "white",
+    "tag": "Effective in edema",
+    "info": "Although it contains a small amount of Vitamin C, which is effective in preventing infections and skin beauty, and potassium, which helps relieve edema, it is not so nutritious, but it is low in calories so it is popular as an item that adds volume to dieet foods.",
+    "nutrient": ["Dietary fiber"],
+    "best time": [1,12],
+    "how to choose": "Choose on that have a low of roots and whose color did not turn brown.",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+},
+"Cauliflower": {
+    "color": "white",
+    "tag": "Healthy Skin",
+    "info": "Cauliflower is an effective nutrient for maintaining skin health as it contains a lot of Vitamin C which helps produce the collagan that binds cells together.",
+    "nutrient": ["Vitamin B", "Folic Acid", "Vitamin C", "Potassium", "Dietary fiber"],
+    "best time": [11,3],
+    "how to choose": "Choose ones that have heavy white buds and are not discolored",
+    "how to eat": "",
+    "why to eat":"",
+    "rec_recipe": [{"name": "", "how to make": [""]}],
+    "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+
+}
+
+
+}
