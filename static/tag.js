@@ -83,7 +83,7 @@ readJSON("static/fruits.json", function(text){
   }
   // tag Osteporosis Prevention
   for(let i=0;i<json_length;i++){
-    if(fruit_data[Object.keys(fruit_data)[i]]['effect'].includes("Osteporosis Prevention")){
+    if(fruit_data[Object.keys(fruit_data)[i]]['effect'].includes("Osteoporosis Prevention")){
       var name=Object.keys(fruit_data)[i];
       console.log(i);
       const card_element = document.createElement('div');

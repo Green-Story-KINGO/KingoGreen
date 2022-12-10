@@ -1,3 +1,11 @@
+
+let curname = window.localStorage.getItem("curUser");
+
+var welcome_text = "Welcome,<br> "+curname+"!";
+console.log(welcome_text);
+document.getElementById("welcome_text").innerHTML=welcome_text;
+
+
 // https://juni-official.tistory.com/141
 function readJSON(file, callback) {
   var rawFile = new XMLHttpRequest();
@@ -16,94 +24,151 @@ function readJSON(file, callback) {
 
 
 function myRecipe() {
-
-    $("#recipes").empty()
-
+  
+  readJSON("./static/user.json", function(text){
+    var user_data = JSON.parse(text);
+    
+    var json_length=Object.keys(user_data).length;
+    console.log(user_data);
+    console.log(curname);
+    $("#recipes").empty();
+    $('.recipes').fadeOut(0) //
     let recipeBox = document.getElementById("recipes");
+    var count =0;
+    for(let i=0;i<json_length;i++){
+      
+      if(user_data[Object.keys(user_data)[i]]["user_name"]==curname){
+        if(user_data[Object.keys(user_data)[i]]["my_recipe"].length!=0){
+          count +=1;
+          
+  
+          let recipeImage = document.createElement("div")
+          recipeImage.setAttribute("class", "recipeImage")
+    
+    
+          let recipeType = document.createElement("div")
+          recipeType.setAttribute("class", "recipeType")
+          
+          recipe_data=user_data[Object.keys(user_data)[i]]['my_recipe'];
+          console.log(recipe_data[0]);
 
-    let recipeImage = document.createElement("div")
-    recipeImage.setAttribute("class", "recipeImage")
+          for(var k=0;k<recipe_data.length;k++){
+            let recipeName = document.createElement("h2")
+            recipe_name=recipe_data[k]["name"]
+            recipeName.innerHTML = recipe_name;
 
-
-    let recipeType = document.createElement("div")
-    recipeType.setAttribute("class", "recipeType")
-
-    let recipeName = document.createElement("h2")
-    recipeName.innerHTML = "Cabbage Greens"
-
-    let recipeInstruction = document.createElement("p")
-    recipeInstruction.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam molestias ratione tenetur voluptatum expedita sint, quaerat facere tempora amet officiis maiores eaque pariatur dolorum reiciendis? Obcaecati maiores possimus quas.";
-
-    let line = document.createElement("div")
-    line.setAttribute("class", "line")
-
-    recipeType.appendChild(recipeName)
-    recipeType.appendChild(recipeInstruction)
-
-    recipeBox.appendChild(recipeImage)
-    recipeBox.appendChild(recipeType)
-    recipeBox.appendChild(line)
-
-    $('.recipes').fadeOut(100) //
-
+            let recipeInstruction = document.createElement("p")
+            recipe_info=recipe_data[k]["how to make"]
+            info_string = ""
+            for(var j=0;j<recipe_info.length;j++){
+              var order = j+1
+              info_string=info_string+"<b>"+order+". "+"</b>"+ recipe_info[j] +"<br><br>";
+            }
+            recipeInstruction.innerHTML = info_string;
+            let line = document.createElement("div")
+            line.setAttribute("class", "line")
+      
+            recipeType.appendChild(recipeName)
+            recipeType.appendChild(recipeInstruction)
+      
+            recipeBox.appendChild(recipeImage)
+            recipeBox.appendChild(recipeType)
+            recipeBox.appendChild(line)
+          }
+        }
+             
+  
+      }
+  
+    }
+    if(count==0){
+      let recipeType = document.createElement("div")
+      recipeType.setAttribute("class", "recipeType")
+      let recipeName = document.createElement("h2")
+      recipeName.innerHTML = "There are No My Recipe!";
+      recipeType.appendChild(recipeName)
+      recipeBox.appendChild(recipeType)
+    }
     $('.recipes').fadeIn(1000) //
+  
+    
+  })
+    
 
 }
 
 function favRecipe() {
+    
+    readJSON("./static/user.json", function(text){
+      var user_data = JSON.parse(text);
+      var json_length=Object.keys(user_data).length;
+      console.log(user_data);
+      console.log(curname);
+      $("#recipes").empty();
+      $('.recipes').fadeOut(0) //
+      let recipeBox = document.getElementById("recipes");
+      var count =0;
+      for(let i=0;i<json_length;i++){
+        
+        if(user_data[Object.keys(user_data)[i]]["user_name"]==curname){
+          if(user_data[Object.keys(user_data)[i]]["my_recipe"].length!=0){
+            count+=1;
+            
+    
+            let recipeImage = document.createElement("div")
+            recipeImage.setAttribute("class", "recipeImage")
+      
+      
+            let recipeType = document.createElement("div")
+            recipeType.setAttribute("class", "recipeType")
+            
+            recipe_data=user_data[Object.keys(user_data)[i]]['liked_recipe'];
+            console.log(recipe_data[0]);
+    
+            for(var k=0;k<recipe_data.length;k++){
+              let recipeName = document.createElement("h2")
+              recipe_name=recipe_data[k]["name"]
+              recipeName.innerHTML = recipe_name;
+    
+              let recipeInstruction = document.createElement("p")
+              recipe_info=recipe_data[k]["how to make"]
+              info_string = ""
+              for(var j=0;j<recipe_info.length;j++){
+                var order = j+1
+                info_string=info_string+"<b>"+order+". "+"</b>"+ recipe_info[j] +"<br><br>";
+              }
+              recipeInstruction.innerHTML = info_string;
+              let line = document.createElement("div")
+              line.setAttribute("class", "line")
+        
+              recipeType.appendChild(recipeName)
+              recipeType.appendChild(recipeInstruction)
+        
+              recipeBox.appendChild(recipeImage)
+              recipeBox.appendChild(recipeType)
+              recipeBox.appendChild(line)
+            }
+          }
+          
+ 
+        }
+    
+      }
+      if(count==0){
+        let recipeType = document.createElement("div")
+        recipeType.setAttribute("class", "recipeType")
+        let recipeName = document.createElement("h2")
+        recipeName.innerHTML = "There are No Liked Recipe!";
+        recipeType.appendChild(recipeName)
+        recipeBox.appendChild(recipeType)
+      }
+      $('.recipes').fadeIn(1000) //
+      
+      
+    })
 
-
-
-    $('#recipes').empty()
-
-    let recipeBox = document.getElementById("recipes");
-
-    let recipeImage = document.createElement("div")
-    recipeImage.setAttribute("class", "recipeImage")
-
-
-    let recipeType = document.createElement("div")
-    recipeType.setAttribute("class", "recipeType")
-
-    let recipeName = document.createElement("h2")
-    recipeName.innerHTML = "Bananan Smoothie"
-
-    let recipeInstruction = document.createElement("p")
-    recipeInstruction.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam molestias ratione tenetur voluptatum expedita sint, quaerat facere tempora amet officiis maiores eaque pariatur dolorum reiciendis? Obcaecati maiores possimus quas.";
-
-    let line = document.createElement("div")
-    line.setAttribute("class", "line")
-
-    recipeType.appendChild(recipeName)
-    recipeType.appendChild(recipeInstruction)
-
-    recipeBox.appendChild(recipeImage)
-    recipeBox.appendChild(recipeType)
-    recipeBox.appendChild(line)
-
-    $('.recipes').fadeOut(100) //
-
-    $('.recipes').fadeIn(1000) //
 
 }
 
 
-readJSON("static/fruits.json", function(text){
-  var fruit_data = JSON.parse(text);
-  
-  
-  var best_time_from = fruit_data[card_name]['best time'][0];
-  var best_time_to = fruit_data[card_name]['best time'][1];
-  var effect = fruit_data[card_name]['effect'];
-  var how_eat = fruit_data[card_name]['how to eat'];
-  var why_eat = fruit_data[card_name]['why to eat'];
-  document.getElementById("detail_name").innerText = card_name;
-  document.getElementById("detail_nutrients").innerText = nutrient[0]+', '+nutrient[1];
-  document.getElementById("detail_pick").innerText = how_pick;
-  document.getElementById("datail_season").innerText = season;
-  
-  document.getElementById("detail_benefit1").innerText = effect[0];
-  document.getElementById("detail_benefit2").innerText = effect[1];
-  document.getElementById("detail_benefit3").innerText = effect[2];
-  document.getElementById("detail_benefit4").innerText = effect[3];
-})
+

@@ -1,7 +1,7 @@
 {
 	"Apple": {
 		"img": "static/img/apple.png",
-		"Color": "Red",
+		"color": "Red",
 		"info": "The apple's major nutrition is Potassium and Dietary Fiber. Although there are not so many other nutrients, the reason why apples are called 'fruits that make you live long if you eat them' is because of their rich functional ingredients. In addition to the effect of suppressing digestion and absorption of fat and the effect of recovering from fatigue, polyphenols contained in apples are known to have anti-aging effects through anti-aging action.",
 		"nutrient": [
 			"Potassium",
@@ -148,7 +148,7 @@
 		]
 	},
 	"mandarine": {
-		"img": "static/img/lettuceGreen.png",
+		"img": "static/img/mandarine.png",
 		"color": "Orange",
 		"info": "Tangerine is a representative fruit of citrus, rich in beta-carotene and vitamin C. Beta-carotene is about twice that of tomatoes, and vitamin C is enough to meet your daily needs by eating three tangerines. It also contains a lot of citric acid, so it is effective in relieving fatigue and preventing colds. In addition, beta-cryptoxanthin contained in tangerines is known to be effective in preventing osteoporosis and lifestyle-related diseases.",
 		"nutrient": [
@@ -164,7 +164,7 @@
 			"Beauty Skin",
 			"Cold Prevention",
 			"Recover from Fatigue",
-			"Osteporosis Prevention"
+			"Osteoporosis Prevention"
 		],
 		"how to eat": "Eat with White peel",
 		"why to eat": "There are people who peel off the film surrounding this tangerine and eat it, but do you know that this part actually contains a lot of nutrients? This part contains vitamin P, which increases the absorption rate of vitamin C. Vitamin P keeps capillaries strong and flexible and has the effect of lowering blood pressure.",
@@ -369,8 +369,8 @@
 		]
 	},
 	"Tomato": {
-		"img": "static/img/lettuceGreen.png",
-		"color": "tomato",
+		"img": "static/img/tomato.png",
+		"color": "Red",
 		"info": "Tomato is a green-yellow vegetable rich in beta-carotene and vitamin C. Among minerals, it contains potassium and selenium, which decomposes hydrogen peroxide, which is the cause of cancer and aging. Potassium has the function of suppressing the increase in blood pressure, so it is one of the vegetables that are good for people with high blood pressure. One of the charms of tomatoes is that if you eat one tomato, you can eat nearly half of the recommended daily vegetable intake of 350g.",
 		"nutrient": [
 			"Vitamin C",
@@ -478,15 +478,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/OxLWJ3iZLyg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/WrHDrcHihRc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -527,15 +519,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/b2loY0YqWn0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/eAOTX1Bjfyg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -575,15 +559,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/FMGArdg4-pY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/23tGra9KBa0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -622,15 +598,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/9PjTJDa9070\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/A6t407fXp7U\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -667,15 +635,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/zau-F0L_hrY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/ApQUENQbgiY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -710,15 +670,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/sp6x9tuDaiU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/1P2vAn6hplQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -753,15 +705,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/-cACd0cF92Q\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/lDVgo2A1YmU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -800,15 +744,7 @@
 				]
 			}
 		],
-		"my_recipe": [
-			{
-				"name": "",
-				"how to make": [
-					""
-				],
-				"id": "username"
-			}
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/T7bN3f70B44\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/BychJBkhKp4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"

@@ -54,7 +54,7 @@ function passwordCheck(str) { // Here this function checks to see if th password
  
 $('.loginPage').click(function() { // This loads the login page
 
-    $('.container').fadeOut(200);
+    $('.container').fadeOut(0);
     $('.container').fadeIn(1000)
 
     if (counter> 0) {
@@ -84,7 +84,7 @@ $('.loginPage').click(function() { // This loads the login page
     // This is where we put the login info
 
     let email = $('<p></p>').text("Username")
-    email.css({'color': 'black', 'font-size': '10pt' , 'width': '100%'})
+    email.css({'color': 'black', 'font-size': '10pt' , 'width': '100%', })
     let emailBox = $('<input type=text></input>')
     emailBox.attr('placeholder', 'Username')
     emailBox.css({'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
@@ -94,7 +94,7 @@ $('.loginPage').click(function() { // This loads the login page
 
     let password = $('<p></p>').text("Password")
     password.css({'color': 'black', 'font-size': '10pt', 'width': '100%' })
-    let passwordBox = $('<input type=text></input>')
+    let passwordBox = $('<input type=password></input>')
     passwordBox.attr('placeholder', 'Password')
     passwordBox.css({'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
 
@@ -103,7 +103,9 @@ $('.loginPage').click(function() { // This loads the login page
 
     let loginButton = $('<button></button>')
     loginButton.text("Login")
-    loginButton.css({ 'text-align':'center', 'color':'black', 'width': '100%', 'height': '40px','background-color': 'green'})
+    loginButton.css({ 'text-align':'center', 'color':'white', 'width': '100%', 'height': '40px','background-color': 'green', 'font-weight':'bold', 'border-width':"0px", 
+    'border-radius':"3px"
+  })
 
     $('.buttonPlace').append(loginButton)
     loginButton.click(function(){
@@ -116,22 +118,16 @@ $('.loginPage').click(function() { // This loads the login page
             temp = true
             //if(emailBox.val() == UserEmail && passwordBox.val() == UserPassword){ // Validates the email and password
             if(temp){ // Validates the email and password
-                $('.container').css({height: '100px'});
+                
 
-            
-                $(".topPage").empty();
-                $(".info").empty();
-                $(".buttonPlace").empty();
+                
 
-                let loginHead = $('<h2></h2>').text("You are logged in.")
 
-                loginHead.css({color:'black'});
-                $('.topPage').append(loginHead)
                 $.ajax({
                   type:'POST',
                   url:'http://172.30.1.100:8080/updateuser',
                   data:{
-                    "email": emailBox.val(),
+                    "user_name": emailBox.val(),
                     "pw": passwordBox.val(),
                   },
                   dataType: 'json',
@@ -139,9 +135,26 @@ $('.loginPage').click(function() { // This loads the login page
                   success:function(data)
                   {
                     cur_name = data['user_name'];
-                    localStorage.setItem('curUser', cur_name);
-                    alert("Success Login!");
-                    location.replace("http://172.30.1.100:8080/home")
+                    window.localStorage.setItem('curUser', cur_name);
+                    console.log(data['success']);
+                    console.log(typeof(data['success']));
+                    if(data['success']==1){
+                      $('.container').css({height: '100px'});
+                      $(".topPage").empty();
+                      $(".info").empty();
+                      $(".buttonPlace").empty();
+                      let loginHead = $('<h2></h2>').text("You are logged in.")
+                      loginHead.css({color:'black'});
+                      $('.topPage').append(loginHead)
+                      alert("Login Success!");
+                      location.replace("http://172.30.1.100:8080/home")
+                    }
+                    else{
+                      alert("Login Failed!");
+                      loginInfo.text("Credentials do not match!")
+                      loginInfo.css('color', 'red')
+                    }
+                      
                   },
         
                   error: function() {
@@ -150,8 +163,7 @@ $('.loginPage').click(function() { // This loads the login page
                 });
             }
             else {
-                loginInfo.text("Credentials do not match!")
-                loginInfo.css('color', 'red')
+                
 
 
             }
@@ -178,7 +190,7 @@ $('.loginPage').click(function() { // This loads the login page
 
 
 $('.signPage').click(function() { // This brings us to the sign up page
-  $('.container').fadeOut(200);
+  $('.container').fadeOut(0);
   $('.container').fadeIn(1000) // This fades in and fades out the page
 
     if (counter> 0) {
@@ -233,7 +245,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
 
     let password = $('<p></p>').text("Password")
     password.css({'color': 'black', 'font-size': '10pt', 'width': '100%' })
-    let passwordBox = $('<input type=text></input>')
+    let passwordBox = $('<input type=password></input>')
     passwordBox.attr('placeholder', 'Password')
     passwordBox.css({'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
 
@@ -242,7 +254,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
     
     let confPassword = $('<p></p>').text("Confirm Password")
     confPassword.css({'color': 'black', 'font-size': '10pt', 'width': '100%' })
-    let confBox = $('<input type=text></input>')
+    let confBox = $('<input type=password></input>')
     confBox.attr('placeholder', 'Confirm Password')
     confBox.css({'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
    
@@ -252,7 +264,8 @@ $('.signPage').click(function() { // This brings us to the sign up page
 
     let SignButton = $('<button></button>')
     SignButton.text("Sign Up")
-    SignButton.css({'background-color':'green', 'text-align':'center', 'color':'black', 'width': '100%', 'height': '40px'})
+    SignButton.css({'background-color':'green', 'text-align':'center', 'color':'white', 'width': '100%', 'height': '40px', 'font-weight':'bold', 'border-width':"0px", 
+    'border-radius':"3px"})
 
     $('.buttonPlace').append(SignButton)
     SignButton.click(function(){ // This is the sign up  button
@@ -277,6 +290,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
                 "username": firstBox.val(),
                 "email": emailBox.val(),
                 "pw": passwordBox.val(),
+                "cfpw": confBox.val()
               },
               dataType: 'json',
     

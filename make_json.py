@@ -11,7 +11,7 @@ file_data = OrderedDict()
 # }
 file_data["Apple"]={
   "img":"static/img/apple.png",
-  "Color" : "Red",
+  "color" : "Red",
 	"info" : "The apple's major nutrition is Potassium and Dietary Fiber. Although there are not so many other nutrients, the reason why apples are called 'fruits that make you live long if you eat them' is because of their rich functional ingredients. In addition to the effect of suppressing digestion and absorption of fat and the effect of recovering from fatigue, polyphenols contained in apples are known to have anti-aging effects through anti-aging action.",
 	"nutrient" : ["Potassium", "Dietary Fiber"],
 	"best time" : [9,10],
@@ -24,7 +24,7 @@ file_data["Apple"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/4RAwv500cDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/1mXXwqvihVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Banana"]={
-  "img":"static/img/lettuceGreen.png",
+  "img":"static/img/banana.png",
   "Color" : "Yellow",
 	"info" : "Bananas, which can always be purchased at an affordable price, are fruits that contain a lot of carbohydrates to compete with sweet potatoes or potatoes. The main feature of bananas is that they contain starch, glucose, fructose, and sucrose evenly in carbohydrates. In addition, it is rich in pectin, a water-soluble dietary fiber that prevents constipation or suppresses rises in blood sugar and cholesterol levels, and contains vitamin C, an essential ingredient for skin care.",
 	"nutrient" : ["Vitamin C", "Potassium"],
@@ -72,7 +72,7 @@ file_data["mandarine"]={
 	"nutrient" : ["Beta carotene", "potassium"],
 	"best time" : [11, 3],
 	"how to choose" : "Choose ones with a dark, vivid orange color and a glossy finish.",
-	"effect" : ["Beauty Skin", "Cold Prevention", "Recover from Fatigue", "Osteporosis Prevention"],
+	"effect" : ["Beauty Skin", "Cold Prevention", "Recover from Fatigue", "Osteoporosis Prevention"],
 	"how to eat" : "Eat with White peel",
 	"why to eat" : "There are people who peel off the film surrounding this tangerine and eat it, but do you know that this part actually contains a lot of nutrients? This part contains vitamin P, which increases the absorption rate of vitamin C. Vitamin P keeps capillaries strong and flexible and has the effect of lowering blood pressure.",
 	"rec_recipe" : [{"name" : "Mandarine Syrup", "how to make" : ["Peel 3 mandarine and cut them into bite-sized pieces so you can put into bottle.", "Pour mandarine and sugar alternately into the bottle.", "Let it mature for about a week and eat it with soda."]}],
@@ -150,8 +150,8 @@ file_data["Pak Choi"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/lh1qsGDFLhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/ANisqQXUR7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Tomato"]={
-  "img":"static/img/lettuceGreen.png",
-  "color" : "tomato",
+  "img":"static/img/tomato.png",
+  "color" : "Red",
 	"info" : "Tomato is a green-yellow vegetable rich in beta-carotene and vitamin C. Among minerals, it contains potassium and selenium, which decomposes hydrogen peroxide, which is the cause of cancer and aging. Potassium has the function of suppressing the increase in blood pressure, so it is one of the vegetables that are good for people with high blood pressure. One of the charms of tomatoes is that if you eat one tomato, you can eat nearly half of the recommended daily vegetable intake of 350g.",
 	"nutrient" : ["Vitamin C", "Potassium"],
 	"best time" : [6, 9],
@@ -189,7 +189,7 @@ file_data["Broccoli"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Broccoli Juice", "how to make": ["Various insects can live on broccoli leaves, so wash them well and cut them into bite-size pieces.", "It is somewhat bitter to eat only broccoli, so grind it in a blender with apples and bananas.", "If you put ice in the blender, you can enjoy it as a shake."]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/OxLWJ3iZLyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/WrHDrcHihRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
@@ -205,7 +205,7 @@ file_data["Asparagus"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Asparagus with Butter", "how to make": ["Discard the tough bottoms of the spear, put butter in wide skillet over medium-high heat. Cook until the asparagus is firm-tender about 3 minutes. Add lemon juice and zest to the butter."]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/b2loY0YqWn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/eAOTX1Bjfyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
@@ -221,7 +221,7 @@ file_data["Avocado"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Smashed avocado on toast", "how to make": ["Cut the avocado in half and carefully remove its stone. Scoop out the flesh into a bowl and squeeze lemon juice then mash with a fork until desired texture. Season to taste with sea salt, black pepper and chilli flakes. Toast your bread, drizzle over the oil then pile the avocado on top"]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/FMGArdg4-pY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/23tGra9KBa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
@@ -237,7 +237,7 @@ file_data["Pepper"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Pepper mixed with carrot", "how to make": ["Take out some stored carrot slices and mix it with the pepper in a bowl. Place a wrap over the plate and microwave for two minutes. Add a bit of salt and pepper spice."]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/9PjTJDa9070" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/A6t407fXp7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
@@ -253,7 +253,7 @@ file_data["Cucumber"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Cucumber green tea seasonings", "how to make": ["Remove the cucumber tip and slice it round and thin. Add some salt. Slice the green teas into thick pieces. Add Ponzu sauce, sesame oil and Korean pepper and mix."]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/zau-F0L_hrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/ApQUENQbgiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
@@ -269,7 +269,7 @@ file_data["Ginger"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Ginger Flapjacks", "how to make": ["Heat oven to 200X. Gently melt together the butter, sugar and syrup in a large pan. Tip in the oats, flour and coconut, and mix well. Press the mixture into the tin to flatten evenly. Bake for 30 minutes until golden and crisping. "]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/sp6x9tuDaiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/1P2vAn6hplQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
@@ -285,7 +285,7 @@ file_data["Bean Sprouts"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Chicken and Bean Sprouts", "how to make": ["Add chicken to the bean sprouts in fry pan with heat around 200C. Stir around for 3 minutes then add the soy sauce, oyster sauce, and Shaoxing wine to give the whole dish a delicious umami flavor."]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/-cACd0cF92Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' , '<iframe width="100%" height="400" src="https://www.youtube.com/embed/lDVgo2A1YmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Cauliflower"]={
@@ -300,7 +300,7 @@ file_data["Cauliflower"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Cauliflower Cheese", "how to make": ["Add 1 large cauliflower, broken into pieces and cook for 5 minutes. Drain the cauliflower and heat oven to 220C. Add 500ml milk, tbsp flour and 50g butter. Keep whisking fast as the butter melts and the mixture comes to the boil. Turn off the heat and pour 100g grated cheddar cheese and pour over the cauliflower. Put in oven and bake for 20 mins"]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "my_recipe": [],
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/T7bN3f70B44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/BychJBkhKp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }

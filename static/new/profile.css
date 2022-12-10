@@ -39,6 +39,11 @@
     justify-content: baseline;
 }
 
+p {
+  text-align: left;
+}
+
+
 .myRecipe {
     width:50%;
     flex:1;

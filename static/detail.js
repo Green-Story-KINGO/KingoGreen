@@ -110,20 +110,35 @@ readJSON("static/fruits.json", function(text){
   var best_time_from = fruit_data[card_name]['best time'][0];
   var best_time_to = fruit_data[card_name]['best time'][1];
   var effect = fruit_data[card_name]['effect'];
-  var how_eat = fruit_data[card_name]['how to eat'];
-  var why_eat = fruit_data[card_name]['why to eat'];
-  
   var img_path = fruit_data[card_name]['img'];
+  var video_path = fruit_data[card_name]['youtube'];
+
+  var recipe= fruit_data[card_name]['rec_recipe'];
+  var recipe_name = recipe[0]["name"];
+  var recipe_info = recipe[0]["how to make"];
 
 
   document.getElementById("detail_name").innerText = card_name;
   document.getElementById("detail_nutrients").innerText = nutrient[0]+', '+nutrient[1];
   document.getElementById("detail_pick").innerText = how_pick;
   document.getElementById("datail_season").innerText = season;
-  
+  document.getElementById("foodImage").style.backgroundImage = "url("+img_path+")";
+  document.getElementById("detail_info").innerText=info;
+  console.log(img_path);
   document.getElementById("detail_benefit1").innerText = effect[0];
   document.getElementById("detail_benefit2").innerText = effect[1];
   document.getElementById("detail_benefit3").innerText = effect[2];
   document.getElementById("detail_benefit4").innerText = effect[3];
+  document.getElementById("more_button").href = "http://172.30.1.100:8080/morerecipe?"+card_name;
+  
+  var info = "<h3>"+recipe_name+"</h3>"+"<br><br>";
+  for(var i=0;i<recipe_info.length;i++){
+    order = i+1;
+    info = info +order+". "+recipe_info[i]+"<br><br>";
+  }
+  document.getElementById("detail_recipe_name").innerHTML = info;
+  document.getElementById("video_path1").innerHTML = video_path[0];
+  document.getElementById("video_path2").innerHTML = video_path[1];
+
 })
 
