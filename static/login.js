@@ -8,7 +8,6 @@ let UserPassword = ''
 let correct = 0
 let loginCorrect = 0
 
-
 function passwordCheck(str) { // Here this function checks to see if th password has correct format
     // Regex to check if a string
     // contains uppercase, lowercase
@@ -114,8 +113,9 @@ $('.loginPage').click(function() { // This loads the login page
         console.log(UserPassword)
         if(emailBox.val().length > 0 && passwordBox.val().length > 0){
           console.log("in")
-        
-            if(emailBox.val() == UserEmail && passwordBox.val() == UserPassword){ // Validates the email and password
+            temp = true
+            //if(emailBox.val() == UserEmail && passwordBox.val() == UserPassword){ // Validates the email and password
+            if(temp){ // Validates the email and password
                 $('.container').css({height: '100px'});
 
             
@@ -127,6 +127,27 @@ $('.loginPage').click(function() { // This loads the login page
 
                 loginHead.css({color:'black'});
                 $('.topPage').append(loginHead)
+                $.ajax({
+                  type:'POST',
+                  url:'http://172.30.1.100:8080/updateuser',
+                  data:{
+                    "email": emailBox.val(),
+                    "pw": passwordBox.val(),
+                  },
+                  dataType: 'json',
+        
+                  success:function(data)
+                  {
+                    cur_name = data['user_name'];
+                    localStorage.setItem('curUser', cur_name);
+                    alert("Success Login!");
+                    location.replace("http://172.30.1.100:8080/home")
+                  },
+        
+                  error: function() {
+                      alert('error');
+                  }
+                });
             }
             else {
                 loginInfo.text("Credentials do not match!")
@@ -135,6 +156,12 @@ $('.loginPage').click(function() { // This loads the login page
 
             }
         }
+        
+
+
+
+
+
 
     })
 
@@ -228,10 +255,9 @@ $('.signPage').click(function() { // This brings us to the sign up page
     SignButton.css({'background-color':'green', 'text-align':'center', 'color':'black', 'width': '100%', 'height': '40px'})
 
     $('.buttonPlace').append(SignButton)
-
     SignButton.click(function(){ // This is the sign up  button
 
-        if(correct >= 6){ // If enough correct happened then we sign in
+        if(correct >= 0){ // If enough correct happened then we sign in
         $('.container').css({height: '100px'});
 
       
@@ -242,7 +268,27 @@ $('.signPage').click(function() { // This brings us to the sign up page
             let signHead = $('<h2></h2>').text("You are signed up.")
     
             signHead.css({color:'black'});
-            $('.topPage').append(signHead)
+            $('.topPage').append(signHead);
+            
+            $.ajax({
+              type:'POST',
+              url:'http://172.30.1.100:8080/makeid',
+              data:{
+                "username": firstBox.val(),
+                "email": emailBox.val(),
+                "pw": passwordBox.val(),
+              },
+              dataType: 'json',
+    
+              success:function(data)
+              {
+                  alert('Success');
+              },
+    
+              error: function() {
+                  alert('error');
+              }
+            });
     
         }
         if(firstBox.val().length === 0){ 
@@ -254,16 +300,6 @@ $('.signPage').click(function() { // This brings us to the sign up page
           firstNameOk.remove()
           firstNameWarning.text("Please enter your first name")
           firstNameWarning.css({'position':'relative', 'top':'30px', 'left':'230px'})
-        }
-        if(lastBox.val().length === 0){
-          lastBox.css('border', '1px solid red')
-                
-                
-        
-          lastName.append(lastNameWarning)
-          lastNameOk.remove()
-          lastNameWarning.text("Please enter your last name")
-          lastNameWarning.css({'position':'relative', 'top':'30px', 'left':'230px'})
         }
 
         if(emailBox.val().length === 0){
@@ -300,14 +336,6 @@ $('.signPage').click(function() { // This brings us to the sign up page
      
 
 
-        if(clicked == 0) {
-
-          Foption.append(genderWarning)
-          genderOk.remove()
-
-
-
-        }
         correct = 0
 
     })
@@ -316,5 +344,15 @@ $('.signPage').click(function() { // This brings us to the sign up page
     // Now we are going to check the conditions of each
 
 })
+
+
+// $(document.body).delegate('.buy_class', 'click', function() {
+
+
+
+
+
+// }
+
 
 
