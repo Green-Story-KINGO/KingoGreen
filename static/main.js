@@ -1,4 +1,4 @@
 function newPage() {
-    window.location.href = "detail.html";
+  window.location.href = "detail.html";
 
 }

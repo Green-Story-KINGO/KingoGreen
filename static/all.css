@@ -24,6 +24,26 @@ body {
     display:flex;
     
 }
+.cardSpace2 {
+  margin-top: 20px;
+  display:flex;
+  
+}
+.cardSpace3 {
+  margin-top: 20px;
+  display:flex;
+  
+}
+.cardSpace4{
+  margin-top: 20px;
+  display:flex;
+  
+}
+.cardSpace5{
+  margin-top: 20px;
+  display:flex;
+  
+}
 
 .cards {
     transition: all 1s ease-in-out; 
@@ -58,5 +78,14 @@ body {
     margin-left:80px;
     margin-top:60px;
     margin-bottom:40px;
+
+}
+.thumb{
+  background-image: url(img/cabbage.png);
+  height:400px; width:90%;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+
 
 }

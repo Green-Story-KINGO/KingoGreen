@@ -22,9 +22,25 @@
 }
 
 .cardSpace {
-    margin-top: 20px;
-    display:flex;
-    
+  display: flex;
+  margin-top: 20px;
+  overflow: scroll;
+  white-space:nowrap;
+}
+.cardSpace2 {
+  margin-top: 20px;
+  display:flex;
+  
+}
+.cardSpace3 {
+  margin-top: 20px;
+  display:flex;
+  
+}
+.cardSpace4 {
+  margin-top: 20px;
+  display:flex;
+  
 }
 
 .cards {
@@ -72,5 +88,15 @@
 
 .tagTitle:hover {
     transform: scale(1.1); 
+
+}
+
+.thumb{
+  background-image: url(img/cabbage.png);
+  height:400px; width:90%;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+
 
 }
