@@ -1,0 +1,17 @@
+{
+	"jys8332@naver.com": {
+		"user_name": "jys",
+		"password": "1234",
+		"liked_recipe": [
+			{
+				"name": "Apple Compote",
+				"how to make": [
+					"Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds",
+					"In a heat-resistant container, add 1/2 cup of white wine and 1/2 cup of water and 40g of sugar and mix well. Add an apple and 4 sliced lemons, cover and heat in the microwave for 5 minutes. Take it out of the microwave, turn it upside down, cover it again and heat it for 5 minutes.",
+					"Transfer to a bowl and garnish with an appropriate amount of mint leaves. It is delicious even if you put it in the refrigerator and eat it cold."
+				]
+			}
+		],
+		"my_recipe": []
+	}
+}

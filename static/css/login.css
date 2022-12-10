@@ -41,7 +41,7 @@ body {
 .homeScreen {
     width:100%;
     min-height: 100vh;
-    background-image: url(img/strawberry.jpg);
+    background-image: url(../img/strawberry.jpg);
     height:1000px;
     width:100%;
     background-size: cover;
