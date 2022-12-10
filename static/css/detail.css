@@ -27,6 +27,7 @@ body {
     grid-column: 2/3;
     grid-row:1;
     padding-left:50px;
+    font-size:12pt;
 }
 
 .foodImg {
@@ -83,7 +84,7 @@ body {
 .benefits {
     margin-top:40px;
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
     height:min-content;
 }
 
@@ -104,6 +105,21 @@ body {
         background-color: #F6DDCC;
 }
 
+#detail_benefit1 {
+    grid-column: 2/3;;
+}
+
+#detail_benefit2 {
+    grid-column: 3/4;
+}
+
+#detail_benefit3 {
+    grid-column: 4/5;;
+}
+
+#detail_benefit4 {
+    grid-column: 5/6;;
+}
 .recipes {
     margin-top:200px;
 }

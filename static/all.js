@@ -44,7 +44,9 @@ readJSON("static/fruits.json", function(text){
       card_a.appendChild(card_article);
       card_article.appendChild(item_info);
       card_article.appendChild(item_name);
+
       document.querySelector('.cardSpace').appendChild(card_element);
+
     };
   }
   // tag Promote Digestion

@@ -3,27 +3,26 @@
 
 
 }
+body {
+    height:100%;
+}
 .wrapper {
     display:grid;
     grid-template-columns: 1fr 6fr;
     height:auto;
-    height:2000px;
 }
 
 .sidebar {
     grid-column:1/2;
-    height:1000px
 }
 .tags {
     grid-column: 2/3;
-    height:1000px;
 }
 
 .cardSpace {
-  display: flex;
-  margin-top: 20px;
-  overflow: scroll;
-  white-space:nowrap;
+    margin-top: 20px;
+    display:flex;
+    
 }
 .cardSpace2 {
   margin-top: 20px;
@@ -35,7 +34,12 @@
   display:flex;
   
 }
-.cardSpace4 {
+.cardSpace4{
+  margin-top: 20px;
+  display:flex;
+  
+}
+.cardSpace5{
   margin-top: 20px;
   display:flex;
   
@@ -50,16 +54,20 @@
 
 }
 
+.card_name {
+    color:black;
+    font-size:16pt;
 
+}
 
 .card {
-    height:240px;
+    height:300px;
     width:200px;
     margin-left: 80px;
     margin-bottom:40px;
     border:1px solid black;
     text-align: center;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
     border-radius: 24px;
 
 }
@@ -69,29 +77,16 @@
 
 }
 
-.tagTitle {
-    border-radius: 16px;
-    color:black;
-    width:max-content;
-    height:50px;
-    border: 2px solid black;
+.colorTitle {
     font-weight:500;
-    font-size:15pt;
-    background-color: whitesmoke;
+    font-size:30pt;
     margin-left:80px;
     margin-top:60px;
     margin-bottom:40px;
-    transition: all 0.4s ease-in-out; 
 
 }
-
-.tagTitle:hover {
-    transform: scale(1.1); 
-
-}
-
 .thumb{
-  background-image: url(img/cabbage.png);
+  background-image: url(../img/cabbage.png);
   height:400px; width:90%;
   background-repeat: no-repeat;
   background-size:contain;

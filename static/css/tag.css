@@ -3,26 +3,28 @@
 
 
 }
-body {
-    height:100%;
-}
 .wrapper {
     display:grid;
     grid-template-columns: 1fr 6fr;
     height:auto;
+    height:2000px;
 }
+
 
 .sidebar {
     grid-column:1/2;
+    height:100%;
 }
 .tags {
     grid-column: 2/3;
+    height:100%;
 }
 
 .cardSpace {
-    margin-top: 20px;
-    display:flex;
-    
+  display: flex;
+  margin-top: 20px;
+  overflow:auto;
+  white-space:nowrap;
 }
 .cardSpace2 {
   margin-top: 20px;
@@ -34,12 +36,7 @@ body {
   display:flex;
   
 }
-.cardSpace4{
-  margin-top: 20px;
-  display:flex;
-  
-}
-.cardSpace5{
+.cardSpace4 {
   margin-top: 20px;
   display:flex;
   
@@ -54,16 +51,22 @@ body {
 
 }
 
+.card_name {
+  color:black;
+  font-size:16pt;
+}
+
 
 
 .card {
-    height:270px;
+    height:300px;
     width:200px;
     margin-left: 80px;
     margin-bottom:40px;
     border:1px solid black;
     text-align: center;
     transition: all .2s ease-in-out; 
+    border-radius: 24px;
 
 }
 
@@ -72,16 +75,29 @@ body {
 
 }
 
-.colorTitle {
+.tagTitle {
+    border-radius: 16px;
+    color:black;
+    width:max-content;
+    height:50px;
+    border: 2px solid black;
     font-weight:500;
-    font-size:30pt;
+    font-size:15pt;
+    background-color: whitesmoke;
     margin-left:80px;
     margin-top:60px;
     margin-bottom:40px;
+    transition: all 0.4s ease-in-out; 
 
 }
+
+.tagTitle:hover {
+    transform: scale(1.1); 
+
+}
+
 .thumb{
-  background-image: url(img/cabbage.png);
+  background-image: url(../img/cabbage.png);
   height:400px; width:90%;
   background-repeat: no-repeat;
   background-size:contain;

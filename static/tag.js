@@ -37,6 +37,8 @@ readJSON("static/fruits.json", function(text){
       const item_name = document.createElement('h1');
       item_name.className = 'card_name';
       item_name.innerText=name;
+
+
       const item_info = document.createElement('p');
       item_info.className = 'card_effect';
       card_element.appendChild(card_a);
@@ -45,6 +47,8 @@ readJSON("static/fruits.json", function(text){
       card_article.appendChild(item_info);
       card_article.appendChild(item_name);
       document.querySelector('.cardSpace').appendChild(card_element);
+
+
     };
   }
   // tag Promote Digestion

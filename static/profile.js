@@ -1,6 +1,6 @@
 function myRecipe() {
 
-    $(".recipes").empty()
+    $("#recipes").empty()
 
     let recipeBox = document.getElementById("recipes");
 
@@ -33,7 +33,7 @@ function myRecipe() {
 
 function favRecipe() {
 
-    $('.recipes').empty()
+    $('#recipes').empty()
 
     let recipeBox = document.getElementById("recipes");
 
