@@ -94,108 +94,161 @@ readJSON("static/fruits.json", function(text){
 })
 
 
+let recipeBox= document.getElementById("recipes")
+let temp = document.createElement("div")
+temp.setAttribute("class", "temp")
+
+// Photo
+let sidebar = document.createElement("section")
+sidebar.setAttribute("class", "sidebar")
+
+let titleWrite = document.createElement("div")
+titleWrite.setAttribute("class", "titleWrite")
+titleWrite.innerHTML = "Recipe Name"
+
+let titleText = document.createElement("input")
+titleText.setAttribute("type", "text")
+titleText.setAttribute("class", "titleText")
+titleText.setAttribute("id", "input_recipe_name")
+titleText.setAttribute("placeholder", "Write a Title")
+
+temp.appendChild(titleWrite)
+temp.appendChild(titleText)
+
+let photoTitle = document.createElement("div")
+photoTitle.setAttribute("class", "photoTitle")
+photoTitle.innerHTML = "Photo"
+
+let photoInput = document.createElement("div")
+photoInput.setAttribute("class", "photoInput")
+photoInput.setAttribute("style", "background-image:url(static/img/banana.png)")
+
+sidebar.appendChild(titleWrite)
+sidebar.appendChild(titleText)
+
+sidebar.appendChild(photoTitle)
+sidebar.appendChild(photoInput)
+temp.appendChild(sidebar)
+
+// Text
+
+let sidebarText = document.createElement("section")
+sidebarText.setAttribute("class", "sidebar")
+
+let inputTitle = document.createElement("div")
+inputTitle.setAttribute("class", "photoTitle")
+inputTitle.innerHTML = "Content"
+
+let inputfield = document.createElement("input")
+inputfield.setAttribute("type", "text")
+inputfield.setAttribute("class", "contentText")
+inputfield.setAttribute("id", "input_recipe_info")
+inputfield.setAttribute("placeholder", "How do you make your dish?")
+
+sidebarText.appendChild(inputTitle)
+sidebarText.appendChild(inputfield)
+temp.appendChild(sidebarText)
+
+// Button place
+
+let buttonAgain = document.createElement("section")
+buttonAgain.setAttribute("class", "sidebar")
+buttonAgain.setAttribute("id", "buttonPlace")
 
 
-
-
-function newRecipe() {
-  let recipeBox= document.getElementById("recipes")
-  let temp = document.createElement("div")
-  temp.setAttribute("class", "temp")
+let pageFinish = document.createElement("button")
+pageFinish.setAttribute("class", "finish")
+pageFinish.innerHTML = "<b>Finish</b>"
+buttonAgain.appendChild(pageFinish)
+// pageFinish.addEventListener("click", addFunction);
+pageFinish.onclick=function(){
+  var recipe_name= titleText.value;
+  var recipe_info= inputfield.value;
+  console.log(recipe_name)
+  console.log(recipe_info)
+  if(typeof recipe_name!="undefined" && typeof recipe_info!="undefined" ){
+    console.log("hi");
+    $.ajax({
+      type:'POST',
+      url:'http://172.30.1.100:8080/updaterecipe',
+      data:{
+        "user_name": window.localStorage.getItem("curUser"),
+        "fruit_name": card_name,
+        "recipe_name": recipe_name,
+        "recipe_info": recipe_info,
+      },
+      dataType: 'json',
   
-  // Photo
-  let sidebar = document.createElement("section")
-  sidebar.setAttribute("class", "sidebar")
-
-  let titleWrite = document.createElement("div")
-  titleWrite.setAttribute("class", "titleWrite")
-  titleWrite.innerHTML = "Recipe Name"
-
-  let titleText = document.createElement("input")
-  titleText.setAttribute("type", "text")
-  titleText.setAttribute("class", "titleText")
-  titleText.setAttribute("placeholder", "Write a Title")
-
-  temp.appendChild(titleWrite)
-  temp.appendChild(titleText)
-
-  let photoTitle = document.createElement("div")
-  photoTitle.setAttribute("class", "photoTitle")
-  photoTitle.innerHTML = "Photo"
-
-  let photoInput = document.createElement("div")
-  photoInput.setAttribute("class", "photoInput")
-  photoInput.setAttribute("style", "background-image:url(static/img/camera.png)")
-
-  sidebar.appendChild(titleWrite)
-  sidebar.appendChild(titleText)
-
-  sidebar.appendChild(photoTitle)
-  sidebar.appendChild(photoInput)
-  temp.appendChild(sidebar)
-
-  // Text
-
-  let sidebarText = document.createElement("section")
-  sidebarText.setAttribute("class", "sidebar")
-
-  let inputTitle = document.createElement("div")
-  inputTitle.setAttribute("class", "photoTitle")
-  inputTitle.innerHTML = "Content"
-
-  let inputfield = document.createElement("input")
-  inputfield.setAttribute("type", "text")
-  inputfield.setAttribute("class", "contentText")
-  inputfield.setAttribute("placeholder", "How do you make your dish?")
-
-  sidebarText.appendChild(inputTitle)
-  sidebarText.appendChild(inputfield)
-  temp.appendChild(sidebarText)
-
-  // Button place
-
-  let buttonAgain = document.createElement("section")
-  buttonAgain.setAttribute("class", "sidebar")
-  buttonAgain.setAttribute("id", "buttonPlace")
+      success:function(data)
+      { 
+        $(".recipeType").css({"display":""});
+        $(".temp").css({"display":"none"});
+        s=0;
+        alert('Add My Recipe!');
+          
+      },
+  
+      error: function() {
+          alert('error');
+      }
+    });
+  }
 
 
-  let pageFinish = document.createElement("button")
-  pageFinish.setAttribute("class", "finish")
-  pageFinish.innerHTML = "Finish"
+  
+}
+temp.appendChild(buttonAgain)
 
-  buttonAgain.appendChild(pageFinish)
+recipeBox.appendChild(temp)
+$(".temp").css({"display":"none"});
 
-  temp.appendChild(buttonAgain)
-
-  recipeBox.appendChild(temp)
-
-  pageFinish.addEventListener("click" , addFunction)
-
-
-
-
+s =0;
+function newRecipe() {
+  if(s==0){
+    $(".recipeType").css({"display":"none"});
+    $(".temp").css({"display":""});
+    s=1;
+  }
+  else{
+    $(".recipeType").css({"display":""});
+    $(".temp").css({"display":"none"});
+    s=0;
+  }
  
 }
 
-function addFunction() {
-  $.ajax({
-    type:'POST',
-    url:'http://172.30.1.100:8080/updaterecipe',
-    data:{
-      "user_name": window.localStorage.getItem("curUser"),
-      "fruit_name": card_name,
-      "recipe_name": titleText.val(),
-      "recipe_info": inputfield.val(),
-    },
-    dataType: 'json',
-
-    success:function(data)
-    {
-        alert('Success');
-    },
-
-    error: function() {
-        alert('error');
-    }
-  });
-}
+// function addFunction() {
+//   console.log(document.getElementById("input_recipe_name"));
+//   var recipe_name= document.getElementById("input_recipe_name").value;
+//   var recipe_info= document.getElementById("input_recipe_info").value;
+//   console.log(recipe_name)
+//   console.log(recipe_info)
+//   if(typeof recipe_name!="undefined" && typeof recipe_info!="undefined" ){
+//     console.log("hi");
+//     $.ajax({
+//       type:'POST',
+//       url:'http://172.30.1.100:8080/updaterecipe',
+//       data:{
+//         "user_name": window.localStorage.getItem("curUser"),
+//         "fruit_name": card_name,
+//         "recipe_name": recipe_name,
+//         "recipe_info": recipe_info,
+//       },
+//       dataType: 'json',
+  
+//       success:function(data)
+//       { 
+//         $(".recipeType").css({"display":""});
+//         $(".temp").css({"display":"none"});
+//         s=0;
+//         alert('Add My Recipe!');
+          
+//       },
+  
+//       error: function() {
+//           alert('error');
+//       }
+//     });
+//   }
+  
+// }

@@ -60,6 +60,7 @@ function myRecipe() {
             let recipeInstruction = document.createElement("p")
             recipe_info=recipe_data[k]["how to make"]
             info_string = ""
+            console.log(recipe_info.length);
             for(var j=0;j<recipe_info.length;j++){
               var order = j+1
               info_string=info_string+"<b>"+order+". "+"</b>"+ recipe_info[j] +"<br><br>";

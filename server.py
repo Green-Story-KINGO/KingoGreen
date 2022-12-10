@@ -138,9 +138,9 @@ def updateRecipe():
   for i in range(len(user_data.keys())):
     key = list(user_data.keys())[i]
     if(user_data[key]["user_name"]==user_name):
-      json_data[key]['my_recipe'].append({
+      user_data[key]['my_recipe'].append({
         "name": recipe_name,
-				"how to make": recipe_info
+				"how to make": [recipe_info]
       })
       break
   
