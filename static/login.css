@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+    background-color:  #384047;
+
+}
+
+
+
+#navbar {
+    font-size: 20pt;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:99;
+    background-color: transparent;
+
+}
+
+#navbarText {
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: transparent;
+    color: orange;
+}
+.container {
+    width:40%;
+    height:350px;
+    background-color: whitesmoke;
+    margin:auto;
+    margin-top:10%;
+    border-radius: 24px;
+    
+}
+
+.homeScreen {
+    width:100%;
+    min-height: 100vh;
+    background-image: url(img/strawberry.jpg);
+    height:1000px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+.top {
+    display:flex;
+}
+.loginPage {
+    width:50%;
+    height:30px;
+    background: whitesmoke;
+    flex:1;
+    text-align: center;
+    border-radius: 24px;
+
+}
+.loginPage span{
+    font-size: 10pt;
+}
+.loginPage span:hover {
+    font-weight: bolder;
+}
+
+.topPage {
+    margin-left:20px;
+    margin-right:20px;
+}
+.info {
+    margin-left:20px;
+    margin-right:20px;
+}
+.buttonPlace { 
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    height:40px;
+
+
+}
+.signPage {
+    width:50%;
+    height:30px;
+    background: whitesmoke;
+    flex:1;
+    text-align: center;
+    border-radius: 24px;
+
+}
+.signPage span{
+    font-size: 10pt;
+}
+.signPage span:hover{
+    font-weight: bolder;
+}
+
