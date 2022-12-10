@@ -79,9 +79,10 @@ def updateUser():
     json_data = json.load(f)
   
   exist = 0
+  
   for i in range(len(json_data.keys())):
     key = list(json_data.keys())[i]
-    if(key==email and json_data[key]['password']==user_name):
+    if(key==email and json_data[key]['password']== user_name):
       exist=1
   
   if(exist==1):
