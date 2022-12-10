@@ -20,7 +20,8 @@ file_data["Apple"]={
 	"how to eat" : "Eat with peel",
 	"why to eat" : "Apple peel contains dietary fiber and anthocyanin, a component that helps restore eyesight, and contains nutrients equivalent to about 1/3 of the entire fruit, so it is good to eat it without peeling it.",
 	"rec_recipe" : [{"name" : "Apple Compote", "how to make" : ["Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds", "In a heat-resistant container, add 1/2 cup of white wine and 1/2 cup of water and 40g of sugar and mix well. Add an apple and 4 sliced lemons, cover and heat in the microwave for 5 minutes. Take it out of the microwave, turn it upside down, cover it again and heat it for 5 minutes.", "Transfer to a bowl and garnish with an appropriate amount of mint leaves. It is delicious even if you put it in the refrigerator and eat it cold."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/4RAwv500cDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/1mXXwqvihVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Banana"]={
   "img":"lettuceGreen.png",
@@ -33,7 +34,8 @@ file_data["Banana"]={
 	"how to eat" : "Peel and Enjoy",
 	"why to eat" : "Bananas, which contain various nutrients such as vitamins, minerals, and dietary fiber, are perfect as a meal replacement. Since you can peel it without using a knife, it is the best food as an easy-to-eat source of energy when you don't have time for breakfast or dinner.",
 	"rec_recipe" : [{"name" : "Banana Milk", "how to make" : ["Peel 2 bananas and cut them into bite-sized pieces so you can grind them.", "Blender with a cup of milk and sliced bananas", "If you put ice in the blender, you can enjoy it as a shake."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/Ob8eL4mMOys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/n598U_SOUkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Kiwi"]={
   "img":"kiwi.png",
@@ -46,7 +48,8 @@ file_data["Kiwi"]={
 	"how to eat" : "Eat with meat",
 	"why to eat" : "Kiwi contains actinidin, a proteolytic enzyme that promotes protein digestion and increases absorption in the small intestine. Therefore, if you eat kiwi as a dessert after enjoying meat or fish dishes, this enzyme helps digestion and absorption of protein. In addition, if you put grated kiwi in the seasoning and marinate the meat, you can get the effect of softening the meat. However, when heated, the function of the enzyme disappears.",
 	"rec_recipe" : [{"name" : "Kiwi Juice", "how to make" : ["Peel 2 kiwi and cut them into bite-sized pieces so you can grind them.", "Blender with a cup of water, sliced kiwis, 1 tablespoon of sugar.", "If you put ice in the blender, you can enjoy it as a shake."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/0RvXsbkSGtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/MkF3Zu6-5gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Grapefruit"]={
   "img":"grapefruit.png",
@@ -59,7 +62,8 @@ file_data["Grapefruit"]={
 	"how to eat" : "Eat with Black tea",
 	"why to eat" : "The citric acid contained in grapefruit activates the energy-producing cycle in the body, so you can expect effects such as fatigue recovery and appetite enhancement. On the other hand, caffeine contained in black tea acts to awaken the brain. Therefore, if you eat grapefruit and black tea together when your body is tired or psychologically exhausted, the refreshing effect is maximized. It's also a good idea to have it on your breakfast table to definitely wake up your body and mind.",
 	"rec_recipe" : [{"name" : "Grapefruit Syrup", "how to make" : ["Peel 3 Grapefruit and cut them into bite-sized pieces so you can put into bottle.", "Pour grapefruit and sugar alternately into the bottle.", "Let it mature for about a week and eat it with soda."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/43FQI0BWPWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/8ksLJ9mf-TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["mandarine"]={
   "img":"lettuceGreen.png",
@@ -72,7 +76,8 @@ file_data["mandarine"]={
 	"how to eat" : "Eat with White peel",
 	"why to eat" : "There are people who peel off the film surrounding this tangerine and eat it, but do you know that this part actually contains a lot of nutrients? This part contains vitamin P, which increases the absorption rate of vitamin C. Vitamin P keeps capillaries strong and flexible and has the effect of lowering blood pressure.",
 	"rec_recipe" : [{"name" : "Mandarine Syrup", "how to make" : ["Peel 3 mandarine and cut them into bite-sized pieces so you can put into bottle.", "Pour mandarine and sugar alternately into the bottle.", "Let it mature for about a week and eat it with soda."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/57RB3MakIX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/-Re4ZtqoFdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Beet"]={
   "img":"beet.png",
@@ -85,7 +90,8 @@ file_data["Beet"]={
 	"how to eat" : "Thinly peel",
 	"why to eat" : "Beets contain betacyanin, which acts as an antioxidant, in the vicinity of the skin, so it is important to peel them thinly if you inevitably need to peel them. If it is difficult to peel with a knife, it is effective to use a peeling tool. A salad made with thinly peeled beets tastes fresh and has a vivid color, so it looks good.",
 	"rec_recipe" : [{"name" : "Beet Apple Latte", "how to make" : ["1/3 of the beets are peeled and shredded. 1/2 of the apples, stems removed, peeled and shredded.", "In a bowl, add 1 tablespoon of lemon juice and olive oil, 1/2 teaspoon of sugar, 1/3 teaspoon of salt, and a little bit of black pepper, mix, then add shredded beets and apples and mix well again.", "You can keep it in an airtight container in the refrigerator for 3-4 days."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/ThNKjcyco24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/1M6ZdIZAdAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Turnip"]={
   "img":"turnip.png",
@@ -98,7 +104,8 @@ file_data["Turnip"]={
 	"how to eat" : "Fry the leaves",
 	"why to eat" : "In order to effectively consume the beta-carotene contained in turnip leaves, it is good to cook them with oil like other green and yellow vegetables. If you stir-fry foods that contain calcium, such as small anchovies or dried shrimp, they taste good when made without too much seasoning, and the nutritional value is much higher.",
 	"rec_recipe" : [{"name" : "Pickled Turnips", "how to make" : ["Remove the leaves of 3 turnips and cut them into 4cm lengths. Wash the roots well and divide them into 8 equal half-moon shapes. Place the turnip roots and leaves in a bowl, mix with 2 teaspoons of salt and mix.", "Put the turnips in a ziplock bag, add 1/2 cup of water, 1 tablespoon each of soy sauce, vinegar, and sugar, and finely chop 1 red pepper. Vent the air in the ziplock bag, seal it, mix it by hand, and let it sit for 15 to 20 minutes.", "You can keep it for 3-4 days if you put it in the refrigerator."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/8rHrtHdxHmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/IT66AsqaE2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Crown Daisy"]={
   "img":"crown_daisy.png",
@@ -111,7 +118,8 @@ file_data["Crown Daisy"]={
 	"how to eat" : "The tender leaves are eaten raw",
 	"why to eat" : "Because the stem of crown daisy is hard, it must be heated when cooking, but the tip of the tender leaf can be eaten raw. If you eat it as a salad, you can not only efficiently consume the water-soluble B vitamins, but also fully enjoy the fragrance and excellent texture of crown daisy.",
 	"rec_recipe" : [{"name" : "Crown Daisy Salad", "how to make" : ["For 1 layer of crown daisy, use the tender leaf part. Cut the 10cm long green onion in half and shred it. Tear 1 sheet of toasted seaweed into small pieces with your hands.", "Chop crown daisy, green onion, and seaweed into a bowl, and sprinkle with a dressing of 2 teaspoons each of soy sauce, vinegar, and salad oil and 1/2 teaspoon of sugar."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/EtLNZkT6qE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/Tg2ZWLEuWm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Green Onion"]={
   "img":"green_onion.png",
@@ -124,7 +132,8 @@ file_data["Green Onion"]={
 	"how to eat" : "Chop it up and make it into a seasoning.",
 	"why to eat" : "Aryl emulsification, a fragrant component contained in green onion, is known to have a bactericidal action. It is said that it is good to put roasted green onion on the throat at the beginning of a cold, which is evidence that aryl emulsification is an effective ingredient in protecting the body from viruses. In fact, emulsified aryl increases more when green onions are minced. Therefore, if you eat miso soup with chopped green onions when you have a cold, your body temperature will rise and detoxification will work well.",
 	"rec_recipe" : [{"name" : "Steamed Green Onion and Mustard Soybean Paste", "how to make" : ["Cut 1 strip of green onion into 5cm lengths.", "Arrange the green onions side by side on a heat-resistant dish, sprinkle with 1 tablespoon of water, cover with plastic wrap, and heat in the microwave for 2 minutes.", "Put the green onion in a bowl and pour the sauce made by mixing 1 tablespoon each of soybean paste and vinegar, 1 teaspoon sugar, and 1/2 teaspoon light mustard."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" :['<iframe width="100%" height="400" src="https://www.youtube.com/embed/-p_5xjsxESg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/dIIVrMO_fEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Pak Choi"]={
   "img":"pak_choi.png",
@@ -137,7 +146,8 @@ file_data["Pak Choi"]={
 	"how to eat" : "Eat foods rich in vitamin D",
 	"why to eat" : "It is recommended to eat it with mushrooms such as wood ear mushrooms and dried shiitake mushrooms, which are rich in vitamin D that promotes calcium absorption. Stir-fried pak choi and wood ear mushrooms are common in Chinese restaurants and are not only delicious, but also nutritious.",
 	"rec_recipe" : [{"name" : "Fried Pak Choi", "how to make" : ["After cutting the root of 1 bok choy, cut it into bite-size pieces.", "Fry in a frying pan with minced garlic, beef and oyster sauce", "You can also enjoy it deliciously by stir-frying it with seafood or pork instead of beef."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/lh1qsGDFLhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/ANisqQXUR7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Tomato"]={
   "img":"lettuceGreen.png",
@@ -150,7 +160,8 @@ file_data["Tomato"]={
 	"how to eat" : "Consume with oil",
 	"why to eat" : "It is important to cook with olive oil or sesame oil because the absorption rate of beta-carotene contained in tomatoes increases when consumed with oil. If you want to make a simple dish, try making a tomato salad with only dressing. If you have plenty of time, stir-fry it with shrimp or bacon and make it a nutritionally balanced main dish. The flavor varies depending on the type of oil, so try using it in a variety of ways.",
 	"rec_recipe" : [{"name" : "Tomato Juice", "how to make" : ["Peel 2 tomato and cut them into bite-sized pieces so you can grind them.", "Blender with a cup of water, sliced tomato, 1 tablespoon of sugar.", "If you put ice in the blender, you can enjoy it as a shake."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/Wn8ox93Qhus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/IdOo9mOUlaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Carrot"]={
   "img":"carrot.png",
@@ -163,7 +174,8 @@ file_data["Carrot"]={
 	"how to eat" : "Cook with Oil",
 	"why to eat" : "Like other leafy green vegetables, cooking carrots with oil increases the absorption of beta-carotene. In particular, if you add olive oil, not only can you consume nutrients efficiently, but also the sweetness and flavor of carrots will come alive. Any salad or stir-fry is delicious.",
 	"rec_recipe" : [{"name" : "Stir-fried Bell Pepper Carrots", "how to make" : ["Peel 1 carrot, cut it in half lengthwise and slice it horizontally", "Green peppers in half lengthwise, remove the top and seeds, and cut it horizontally into 1cm wide slices.", "Put a frying pan over medium heat, add 1 tablespoon of oil, and stir-fry bell peppers and carrots."]}],
-	"my_recipe" : []
+	"my_recipe" : [],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/imWDu1Mw6vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/JHoNi3g-Twk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Broccoli"]={
   "img":"brocolli.png",
@@ -177,7 +189,8 @@ file_data["Broccoli"]={
   "how to eat": "",
   "why to eat":"",
   "rec_recipe": [{"name": "Broccoli Juice", "how to make": ["Various insects can live on broccoli leaves, so wash them well and cut them into bite-size pieces.", "It is somewhat bitter to eat only broccoli, so grind it in a blender with apples and bananas.", "If you put ice in the blender, you can enjoy it as a shake."]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/OxLWJ3iZLyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/WrHDrcHihRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
 file_data["Asparagus"]={
@@ -191,8 +204,9 @@ file_data["Asparagus"]={
   "effect" : ["Eye Fatigue Improvement", "Eyesight Recovery", "Promote Digestion", "Increase Appetite"],
   "how to eat": "",
   "why to eat":"",
-  "rec_recipe": [{"name": "Asparagus with Butter", "how to make": [""]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+  "rec_recipe": [{"name": "Asparagus with Butter", "how to make": ["Discard the tough bottoms of the spear, put butter in wide skillet over medium-high heat. Cook until the asparagus is firm-tender about 3 minutes. Add lemon juice and zest to the butter."]}],
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/b2loY0YqWn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/eAOTX1Bjfyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
 file_data["Avocado"]={
@@ -206,8 +220,9 @@ file_data["Avocado"]={
   "effect" : ["Eye Fatigue Improvement", "Eyesight Recovery", "Promote Digestion", "Increase Appetite"],
   "how to eat": "",
   "why to eat":"",
-  "rec_recipe": [{"name": "", "how to make": [""]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+  "rec_recipe": [{"name": "Smashed avocado on toast", "how to make": ["Cut the avocado in half and carefully remove its stone. Scoop out the flesh into a bowl and squeeze lemon juice then mash with a fork until desired texture. Season to taste with sea salt, black pepper and chilli flakes. Toast your bread, drizzle over the oil then pile the avocado on top"]}],
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/FMGArdg4-pY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/23tGra9KBa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
 file_data["Pepper"]={
@@ -221,8 +236,9 @@ file_data["Pepper"]={
   "effect" : ["Eye Fatigue Improvement", "Eyesight Recovery", "Promote Digestion", "Increase Appetite"],
   "how to eat": "",
   "why to eat":"",
-  "rec_recipe": [{"name": "", "how to make": [""]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+  "rec_recipe": [{"name": "Pepper mixed with carrot", "how to make": ["Take out some stored carrot slices and mix it with the pepper in a bowl. Place a wrap over the plate and microwave for two minutes. Add a bit of salt and pepper spice."]}],
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/9PjTJDa9070" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/A6t407fXp7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
 file_data["Cucumber"]={
@@ -236,8 +252,9 @@ file_data["Cucumber"]={
   "effect" : ["Eye Fatigue Improvement", "Eyesight Recovery", "Promote Digestion", "Increase Appetite"],
   "how to eat": "",
   "why to eat":"",
-  "rec_recipe": [{"name": "", "how to make": [""]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+  "rec_recipe": [{"name": "Cucumber green tea seasonings", "how to make": ["Remove the cucumber tip and slice it round and thin. Add some salt. Slice the green teas into thick pieces. Add Ponzu sauce, sesame oil and Korean pepper and mix."]}],
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/zau-F0L_hrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/ApQUENQbgiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
 file_data["Ginger"]={
@@ -251,8 +268,9 @@ file_data["Ginger"]={
   "effect" : ["Eye Fatigue Improvement", "Eyesight Recovery", "Promote Digestion", "Increase Appetite"],
   "how to eat": "",
   "why to eat":"",
-  "rec_recipe": [{"name": "", "how to make": [""]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+  "rec_recipe": [{"name": "Ginger Flapjacks", "how to make": ["Heat oven to 200X. Gently melt together the butter, sugar and syrup in a large pan. Tip in the oats, flour and coconut, and mix well. Press the mixture into the tin to flatten evenly. Bake for 30 minutes until golden and crisping. "]}],
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/sp6x9tuDaiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/1P2vAn6hplQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
 file_data["Bean Sprouts"]={
@@ -266,9 +284,9 @@ file_data["Bean Sprouts"]={
   "effect" : ["Eye Fatigue Improvement", "Eyesight Recovery", "Promote Digestion", "Increase Appetite"],
   "how to eat": "",
   "why to eat":"",
-  "rec_recipe": [{"name": "", "how to make": [""]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
-
+  "rec_recipe": [{"name": "Chicken and Bean Sprouts", "how to make": ["Add chicken to the bean sprouts in fry pan with heat around 200C. Stir around for 3 minutes then add the soy sauce, oyster sauce, and Shaoxing wine to give the whole dish a delicious umami flavor."]}],
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/-cACd0cF92Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' , '<iframe width="100%" height="400" src="https://www.youtube.com/embed/lDVgo2A1YmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Cauliflower"]={
   "img":"cauliflower.png",
@@ -281,8 +299,9 @@ file_data["Cauliflower"]={
   "effect" : ["Eye Fatigue Improvement", "Eyesight Recovery", "Promote Digestion", "Increase Appetite"],
   "how to eat": "",
   "why to eat":"",
-  "rec_recipe": [{"name": "", "how to make": [""]}],
-  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}]
+  "rec_recipe": [{"name": "Cauliflower Cheese", "how to make": ["Add 1 large cauliflower, broken into pieces and cook for 5 minutes. Drain the cauliflower and heat oven to 220C. Add 500ml milk, tbsp flour and 50g butter. Keep whisking fast as the butter melts and the mixture comes to the boil. Turn off the heat and pour 100g grated cheddar cheese and pour over the cauliflower. Put in oven and bake for 20 mins"]}],
+  "my_recipe": [{"name": "", "how to make": [""], "id":"username"}],
+  "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/T7bN3f70B44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/BychJBkhKp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 
 }
 

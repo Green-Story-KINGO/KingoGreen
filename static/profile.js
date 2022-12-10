@@ -27,11 +27,14 @@ function myRecipe() {
     recipeBox.appendChild(recipeType)
     recipeBox.appendChild(line)
 
-
+    $('.recipes').fadeOut(200);
+    $('.recipes').fadeIn(1000) //
 
 }
 
 function favRecipe() {
+
+
 
     $('#recipes').empty()
 
@@ -59,5 +62,8 @@ function favRecipe() {
     recipeBox.appendChild(recipeImage)
     recipeBox.appendChild(recipeType)
     recipeBox.appendChild(line)
+
+    $('.recipes').fadeOut(200);
+    $('.recipes').fadeIn(1000) //
 
 }
