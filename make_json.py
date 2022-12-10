@@ -10,7 +10,7 @@ file_data = OrderedDict()
 #   "liked" : []
 # }
 file_data["Apple"]={
-  "img":"apple.png",
+  "img":"static/img/apple.png",
   "Color" : "Red",
 	"info" : "The apple's major nutrition is Potassium and Dietary Fiber. Although there are not so many other nutrients, the reason why apples are called 'fruits that make you live long if you eat them' is because of their rich functional ingredients. In addition to the effect of suppressing digestion and absorption of fat and the effect of recovering from fatigue, polyphenols contained in apples are known to have anti-aging effects through anti-aging action.",
 	"nutrient" : ["Potassium", "Dietary Fiber"],
@@ -24,7 +24,7 @@ file_data["Apple"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/4RAwv500cDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/1mXXwqvihVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Banana"]={
-  "img":"lettuceGreen.png",
+  "img":"static/img/lettuceGreen.png",
   "Color" : "Yellow",
 	"info" : "Bananas, which can always be purchased at an affordable price, are fruits that contain a lot of carbohydrates to compete with sweet potatoes or potatoes. The main feature of bananas is that they contain starch, glucose, fructose, and sucrose evenly in carbohydrates. In addition, it is rich in pectin, a water-soluble dietary fiber that prevents constipation or suppresses rises in blood sugar and cholesterol levels, and contains vitamin C, an essential ingredient for skin care.",
 	"nutrient" : ["Vitamin C", "Potassium"],
@@ -38,7 +38,7 @@ file_data["Banana"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/Ob8eL4mMOys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/n598U_SOUkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Kiwi"]={
-  "img":"kiwi.png",
+  "img":"static/img/kiwi.png",
   "color" : "Green",
 	"info" : "Kiwi is a fruit rich in vitamin C. Its vitamin C is higher than that of lemons, and eating one can provide almost a daily requirement. It contains not only vitamin C, but also vitamin E and polyphenols, so it has a strong antioxidant effect. It is also attractive that it is rich in potassium, which helps prevent high blood pressure, and dietary fiber, which suppresses the rise of blood sugar levels.",
 	"nutrient" : ["Vitamin E, Vitamin C", "Potassium"],
@@ -52,7 +52,7 @@ file_data["Kiwi"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/0RvXsbkSGtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/MkF3Zu6-5gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Grapefruit"]={
-  "img":"grapefruit.png",
+  "img":"static/img/grapefruit.png",
   "Color" : "Orange",
 	"info" : "Grapefruit is rich in vitamin C, which improves immunity, prevents aging, and helps skin beauty. Grapefruit's unique bitter taste is due to a component called naringin, which is a type of polyphenol, and is known to have an antioxidant effect as well as a neutral fat decomposition function. In addition, it activates the sympathetic nervous system, refreshes the mood, and has the effect of increasing metabolism.",
 	"nutrient" : ["Vitamin C", "Potassium"],
@@ -66,7 +66,7 @@ file_data["Grapefruit"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/43FQI0BWPWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/8ksLJ9mf-TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["mandarine"]={
-  "img":"lettuceGreen.png",
+  "img":"static/img/mandarine.png",
   "color" : "Orange",
 	"info" : "Tangerine is a representative fruit of citrus, rich in beta-carotene and vitamin C. Beta-carotene is about twice that of tomatoes, and vitamin C is enough to meet your daily needs by eating three tangerines. It also contains a lot of citric acid, so it is effective in relieving fatigue and preventing colds. In addition, beta-cryptoxanthin contained in tangerines is known to be effective in preventing osteoporosis and lifestyle-related diseases.",
 	"nutrient" : ["Beta carotene", "potassium"],
@@ -80,7 +80,7 @@ file_data["mandarine"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/57RB3MakIX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/-Re4ZtqoFdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Beet"]={
-  "img":"beet.png",
+  "img":"static/img/beet.png",
   "color" : "Red",
 	"info" : "The origin of beet is Europe, and it has been known as a medicinal plant since the 2nd and 3rd centuries. The vivid color of beets is due to pigment components called betacyanin and bexanthin, which are types of polyphenols. Both of these pigments have strong anti-oxidant action to remove active oxygen, prevent aging, or prevent cells from becoming cancer cells.",
 	"nutrient" : ["Folic acid", "Potassium"],
@@ -94,7 +94,7 @@ file_data["Beet"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/ThNKjcyco24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/1M6ZdIZAdAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Turnip"]={
-  "img":"turnip.png",
+  "img":"static/img/turnip.png",
   "color" : "White",
 	"info" : "Like radishes, turnips have different nutrients in their leaves and roots. The leaves are rich in beta-carotene and vitamin C, and the root contains not only dietary fiber, vitamin C, and potassium, but also amylase, an enzyme that breaks down starch like radish. In addition, there is a spicy ingredient called glucosinolate in the root, which has the function of activating the detoxification of the liver when heated and eaten.",
 	"nutrient" : ["Beta-carotene", "Vitamin C"],
@@ -108,7 +108,7 @@ file_data["Turnip"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/8rHrtHdxHmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/IT66AsqaE2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Crown Daisy"]={
-  "img":"crown_daisy.png",
+  "img":"static/img/crown_daisy.png",
   "color" : "Green",
 	"info" : "Crown daisy, which resembles chrysanthemum leaves, contains vitamins and minerals evenly. Not only is beta-carotene more abundant than spinach, but it also contains a lot of B vitamins, which are indispensable for energy metabolism of carbohydrates, fats and proteins. In addition, perylaldehyde, a component that gives off the unique scent of crown daisy, improves digestion and removes phlegm, which is effective in soothing coughs.",
 	"nutrient" : ["Beta-carotene", "Vitamin E"],
@@ -122,7 +122,7 @@ file_data["Crown Daisy"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/EtLNZkT6qE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/Tg2ZWLEuWm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Green Onion"]={
-  "img":"green_onion.png",
+  "img":"static/img/green_onion.png",
   "color" : "Green",
 	"info" : "Green onion can be largely divided into two types: root green onion with many white parts and leaf onion with green overall. Root green onions, which are classified as white vegetables, are characterized by different nutrients in the white and green parts, like radishes and turnips. The white part contains vitamin C, and the green part, which is classified as green and yellow vegetables, contains beta-carotene, vitamin K, vitamin B group, calcium, and iron.",
 	"nutrient" : ["Vitamin C", "Potassium"],
@@ -136,7 +136,7 @@ file_data["Green Onion"]={
   "youtube" :['<iframe width="100%" height="400" src="https://www.youtube.com/embed/-p_5xjsxESg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/dIIVrMO_fEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Pak Choi"]={
-  "img":"pak_choi.png",
+  "img":"static/img/pak_choi.png",
   "color" : "Green",
 	"info" : "Pak choi is a representative vegetable in China and contains vitamins and minerals evenly. Among vitamins, beta-carotene, which protects the body from active oxygen that causes aging, is rich in calcium, among minerals. Calcium is a nutrient that is effective in preventing osteoporosis, so it is a vegetable that I especially want to recommend to menopausal women who need to pay attention to bone health.",
 	"nutrient" : ["Vitamin K", "Beta-carotene"],
@@ -150,7 +150,7 @@ file_data["Pak Choi"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/lh1qsGDFLhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/ANisqQXUR7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Tomato"]={
-  "img":"lettuceGreen.png",
+  "img":"static/img/lettuceGreen.png",
   "color" : "tomato",
 	"info" : "Tomato is a green-yellow vegetable rich in beta-carotene and vitamin C. Among minerals, it contains potassium and selenium, which decomposes hydrogen peroxide, which is the cause of cancer and aging. Potassium has the function of suppressing the increase in blood pressure, so it is one of the vegetables that are good for people with high blood pressure. One of the charms of tomatoes is that if you eat one tomato, you can eat nearly half of the recommended daily vegetable intake of 350g.",
 	"nutrient" : ["Vitamin C", "Potassium"],
@@ -164,7 +164,7 @@ file_data["Tomato"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/Wn8ox93Qhus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="100%" height="400" src="https://www.youtube.com/embed/IdOo9mOUlaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Carrot"]={
-  "img":"carrot.png",
+  "img":"static/img/carrot.png",
   "color" : "Orange",
 	"info" : "Carrot, the only greenish-yellow vegetable among root vegetables, contains twice as much beta-carotene as Western sweet pumpkin. Beta-carotene is an excellent food ingredient for ingesting beta-carotene. Beta-carotene is converted to vitamin A in the body and functions to maintain eye health, enhance mucosal function, and make skin healthy. Let's get enough beta-carotene through carrots.",
 	"nutrient" : ["Beta-carotene", "Potassium"],
@@ -178,7 +178,7 @@ file_data["Carrot"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/imWDu1Mw6vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="100%" height="400" src="https://www.youtube.com/embed/JHoNi3g-Twk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Broccoli"]={
-  "img":"brocolli.png",
+  "img":"static/img/brocolli.png",
   "color": "Green",
   "tag": "Best way to deal with lifestyle diseases",
   "info": "Broccoli is not only rich in vitamins and minerals, but also has various functional properties and is a vegetable with strong antioxidant ability and high nutritional density",
@@ -194,7 +194,7 @@ file_data["Broccoli"]={
 
 }
 file_data["Asparagus"]={
-  "img":"asparagus.png",
+  "img":"static/img/asparagus.png",
   "color": "Green",
   "tag": "Effective in recovering from fatigue",
   "info": "Asparagus contains beta-carotene, which acts as an antioxidant, folic acid, which is effective in preenting anemia, dietary fiber, and oligosaccharide, which are indespensable for improving the intestinal environment",
@@ -210,7 +210,7 @@ file_data["Asparagus"]={
 
 }
 file_data["Avocado"]={
-  "img":"avocado.png",
+  "img":"static/img/avocado.png",
   "color": "Green",
   "tag": "High in Nutrients",
   "info": "Avocado is not a vegetable, but it is used in cooking like vegetables because it has a deep taste and is nutritious enough to be called a butter in the forest",
@@ -226,7 +226,7 @@ file_data["Avocado"]={
 
 }
 file_data["Pepper"]={
-  "img":"pepper.png",
+  "img":"static/img/pepper.png",
    "color":"Green",
   "tag": "Effective in recovering from fatigue",
   "info": "Green bell peppers, commonly known as peppers, are harvested undercooked. However, it has a significantly higher nutritional value and is rich in antioxidant vitamins",
@@ -242,7 +242,7 @@ file_data["Pepper"]={
 
 }
 file_data["Cucumber"]={
-  "img":"cucumber.png",
+  "img":"static/img/cucumber.png",
   "color":"Green",
   "tag": "Effective in edema",
   "info": "Cucumber is characterized by its fresh and crunchy texture and is an essential vegetables to have on the table during the summer.",
@@ -258,7 +258,7 @@ file_data["Cucumber"]={
 
 }
 file_data["Ginger"]={
-  "img":"ginger.png",
+  "img":"static/img/ginger.png",
   "color":"Yellow",
   "tag": "Excellent for stamina",
   "info": "Garlic is characterized by a particularly high fatigue recovery effect because it contains a substanced called alithiamine, the source of stamina. In addition, it contains Vitamin B12, which is essential for protein metabolism, so it can also keep the skin and mucous membrances healthy",
@@ -274,7 +274,7 @@ file_data["Ginger"]={
 
 }
 file_data["Bean Sprouts"]={
-  "img":"bean_sprouts.png",
+  "img":"static/img/bean_sprouts.png",
   "color": "White",
   "tag": "Effective in edema",
   "info": "Although it contains a small amount of Vitamin C, which is effective in preventing infections and skin beauty, and potassium, which helps relieve edema, it is not so nutritious, but it is low in calories so it is popular as an item that adds volume to dieet foods.",
@@ -289,7 +289,7 @@ file_data["Bean Sprouts"]={
   "youtube" : ['<iframe width="100%" height="400" src="https://www.youtube.com/embed/-cACd0cF92Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' , '<iframe width="100%" height="400" src="https://www.youtube.com/embed/lDVgo2A1YmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>']
 }
 file_data["Cauliflower"]={
-  "img":"cauliflower.png",
+  "img":"static/img/cauliflower.png",
   "color": "White",
   "tag": "Healthy Skin",
   "info": "Cauliflower is an effective nutrient for maintaining skin health as it contains a lot of Vitamin C which helps produce the collagan that binds cells together.",

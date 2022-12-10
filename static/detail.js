@@ -112,6 +112,10 @@ readJSON("static/fruits.json", function(text){
   var effect = fruit_data[card_name]['effect'];
   var how_eat = fruit_data[card_name]['how to eat'];
   var why_eat = fruit_data[card_name]['why to eat'];
+  
+  var img_path = fruit_data[card_name]['img'];
+
+
   document.getElementById("detail_name").innerText = card_name;
   document.getElementById("detail_nutrients").innerText = nutrient[0]+', '+nutrient[1];
   document.getElementById("detail_pick").innerText = how_pick;

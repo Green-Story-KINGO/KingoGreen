@@ -1,3 +1,20 @@
+// https://juni-official.tistory.com/141
+function readJSON(file, callback) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/json");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function() {
+      if (rawFile.readyState === 4 && rawFile.status == "200") {
+          callback(rawFile.responseText);
+      }
+  }
+  rawFile.send(null);
+}
+
+
+
+
+
 function myRecipe() {
 
     $("#recipes").empty()
@@ -67,3 +84,24 @@ function favRecipe() {
     $('.recipes').fadeIn(1000) //
 
 }
+
+
+readJSON("static/fruits.json", function(text){
+  var fruit_data = JSON.parse(text);
+  
+  
+  var best_time_from = fruit_data[card_name]['best time'][0];
+  var best_time_to = fruit_data[card_name]['best time'][1];
+  var effect = fruit_data[card_name]['effect'];
+  var how_eat = fruit_data[card_name]['how to eat'];
+  var why_eat = fruit_data[card_name]['why to eat'];
+  document.getElementById("detail_name").innerText = card_name;
+  document.getElementById("detail_nutrients").innerText = nutrient[0]+', '+nutrient[1];
+  document.getElementById("detail_pick").innerText = how_pick;
+  document.getElementById("datail_season").innerText = season;
+  
+  document.getElementById("detail_benefit1").innerText = effect[0];
+  document.getElementById("detail_benefit2").innerText = effect[1];
+  document.getElementById("detail_benefit3").innerText = effect[2];
+  document.getElementById("detail_benefit4").innerText = effect[3];
+})
