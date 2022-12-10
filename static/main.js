@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-function newPage() {
-  window.location.href = "detail.html";
-=======
 
 function fillHeart() {
 
@@ -106,6 +102,5 @@ function addFunction() {
     $('.temp').remove()
 
 
->>>>>>> 4499c01a46484d25a60987c3a24b3cc36f272615
 
 }

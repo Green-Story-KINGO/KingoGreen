@@ -21,7 +21,7 @@ readJSON("static/fruits.json", function(text){
   for(let i=0;i<json_length;i++){
     if(fruit_data[Object.keys(fruit_data)[i]]['color']=="Green"){
       var name=Object.keys(fruit_data)[i];
-      const card_element = document.createElement('div');
+      const card_element = document.createElement('div');1
       card_element.className = 'item';
       const card_a = document.createElement('a');
       card_a.className = 'card';

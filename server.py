@@ -23,6 +23,9 @@ def all():
 def detail():
     return render_template('detail.html')
 
+@app.route('/morerecipe')
+def morerecipe():
+    return render_template('moreRecipe.html')
 
 
 
