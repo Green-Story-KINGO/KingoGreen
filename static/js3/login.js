@@ -194,6 +194,22 @@ $('.loginPage').click(function() { // This loads the login page
 })
 
 
+let alarm = "";
+let empty = 0;
+let emailEmpty = 0
+
+function ValidateEmail(email)
+{
+    let emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(email.match(emailformat))
+      {
+        return true;
+      }
+    else
+      {
+        return false;
+      }
+}
 
 $('.signPage').click(function() { // This brings us to the sign up page
   $('.container').fadeOut(0);
@@ -249,6 +265,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
     emailBox.attr('placeholder', 'Email')
     emailBox.css({'margin-bottom' :'10px','color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
 
+
     $('.info').append(email)
     $('.info').append(emailBox)
 
@@ -269,6 +286,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
     confBox.attr('placeholder', 'Confirm Password')
     confBox.css({'margin-bottom' :'10px', 'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%', 'margin-bottom' :'10px'})
    
+  
     $('.info').append(confPassword)
     $('.info').append(confBox)
 
@@ -279,10 +297,96 @@ $('.signPage').click(function() { // This brings us to the sign up page
     'border-radius':"3px"})
 
     $('.buttonPlace').append(SignButton)
+
+    let emailCheck = 0
+    let passwordCheck = 0
     SignButton.click(function(){ // This is the sign up  button
 
-        if(correct >= 0){ // If enough correct happened then we sign in
-        $('.container').css({height: '100px'});
+        
+      if(firstBox.val().length === 0){ 
+        firstBox.css('border', '1px solid red')
+        empty++;
+              
+              
+      
+
+        alarm +="\nPlease enter your username"
+        console.log(alarm)
+      }
+      else {
+        firstBox.css('border', '1px solid black')
+
+      }
+
+      if(emailBox.val().length === 0){
+        emailBox.css('border', '1px solid red')
+        empty++;
+        emailEmpty++;
+              
+              
+      
+
+        alarm += "\nPlease enter your email"
+        console.log(alarm)
+
+      }
+
+      
+      if(passwordBox.val().length === 0){
+        passwordBox.css('border', '1px solid red')
+        empty++;
+              
+              
+  
+        alarm += "\nPlease enter your password"
+        console.log(alarm)
+
+
+      }
+      else {
+        passwordBox.css('border', '1px solid black')
+
+      }
+      if(confBox.val().length === 0){
+        confBox.css('border', '1px solid red')
+        empty++;
+
+      }
+      else {
+        confBox.css('border', '1px solid black')
+
+      }
+
+      if(empty > 0 && emailEmpty > 0) {
+        alert(alarm)
+        console.log(alarm)
+      }
+
+      else if(empty == 0 && emailEmpty == 0) {
+        if (!ValidateEmail(emailBox.val())){
+          emailBox.css({'margin-bottom' :'10px','color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid red', 'width': '100%'})
+          alert("You have entered an invalid email address!");
+    
+        }
+        else {
+          emailCheck++;
+          emailBox.css({'margin-bottom' :'10px','color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
+    
+        }
+      }
+
+      if(confBox.val() == passwordBox.val()){
+        confBox.css({'margin-bottom' :'10px', 'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%', 'margin-bottom' :'10px'})
+  
+        passwordCheck++;
+      }
+      else {
+        confBox.css({'margin-bottom' :'10px', 'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid red', 'width': '100%', 'margin-bottom' :'10px'})
+      }
+
+        if(passwordCheck == 1 && emailCheck == 1){ // If enough correct happened then we sign in
+          // If the email format and confirm password matches password
+        $('.container').css({height: '200px'});
 
       
             $(".topPage").empty();
@@ -316,54 +420,18 @@ $('.signPage').click(function() { // This brings us to the sign up page
             });
     
         }
-        if(firstBox.val().length === 0){ 
-          firstBox.css('border', '1px solid red')
-                
-                
-        
-          firstName.append(firstNameWarning)
-          firstNameOk.remove()
-          firstNameWarning.text("Please enter your first name")
-          firstNameWarning.css({'position':'relative', 'top':'30px', 'left':'230px'})
-        }
-
-        if(emailBox.val().length === 0){
-          emailBox.css('border', '1px solid red')
-                
-                
-        
-          email.append(emailWarning)
-          emailOk.remove()
-          emailWarning.text("Please enter your email")
-          emailWarning.css({'position':'relative', 'top':'30px', 'left':'250px'})
-        }
-        if(passwordBox.val().length === 0){
-          passwordBox.css('border', '1px solid red')
-                
-                
-        
-          password.append(passwordWarning)
-          passwordOk.remove()
-          passwordWarning.text("Please enter your password")
-          passwordWarning.css({'position':'relative', 'top':'30px', 'left':'230px'})
-        }
-        if(confBox.val().length === 0){
-          confBox.css('border', '1px solid red')
-                
-                
-        
-          confPassword.append(confirmWarning)
-          confirmOk.remove()
-          confirmWarning.text("Please enter your password")
-          confirmWarning.css({'position':'relative', 'top':'30px', 'left':'180px'})
-        }
-
      
 
-
+        empty = 0
         correct = 0
+        alarm = " "
+        emailEmpty = 0
+        emailCheck = 0
+        passwordCheck = 0
 
     })
+
+
 
 
     // Now we are going to check the conditions of each
