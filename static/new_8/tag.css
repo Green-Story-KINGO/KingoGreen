@@ -3,18 +3,15 @@
 
 
 }
+body {
+  height:100%;
+}
 .wrapper {
-    display:grid;
-    grid-template-columns: 1fr 6fr;
+
     height:auto;
-    height:2000px;
 }
 
 
-.sidebar {
-    grid-column:1/2;
-    height:100%;
-}
 .tags {
     grid-column: 2/3;
     height:100%;
@@ -23,26 +20,50 @@
 .cardSpace {
   display: flex;
   margin-top: 20px;
-  overflow:auto;
-  white-space:nowrap;
+  overflow-x:auto;
   padding-top:15px;
+}
+
+
+.cardSpace::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.cardSpace::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.cardSpace::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: lightgray;
 }
 .cardSpace2 {
   margin-top: 20px;
   display:flex;
   padding-top:15px;
+  overflow-x:auto;
+
   
 }
 .cardSpace3 {
   margin-top: 20px;
   display:flex;
   padding-top:15px;
+  overflow-x:auto;
+
   
 }
 .cardSpace4 {
   margin-top: 20px;
   display:flex;
   padding-top:15px;
+  overflow-x:auto;
+
   
 }
 

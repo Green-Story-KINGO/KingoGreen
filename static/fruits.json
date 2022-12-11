@@ -147,7 +147,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/8ksLJ9mf-TE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		]
 	},
-	"mandarine": {
+	"Mandarine": {
 		"img": "static/img/mandarine.png",
 		"color": "Orange",
 		"info": "Tangerine is a representative fruit of citrus, rich in beta-carotene and vitamin C. Beta-carotene is about twice that of tomatoes, and vitamin C is enough to meet your daily needs by eating three tangerines. It also contains a lot of citric acid, so it is effective in relieving fatigue and preventing colds. In addition, beta-cryptoxanthin contained in tangerines is known to be effective in preventing osteoporosis and lifestyle-related diseases.",
