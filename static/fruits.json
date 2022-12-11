@@ -33,16 +33,16 @@
 		"my_recipe": [
 			{
 				"fruit_name": "Apple",
-				"name": "asdf",
+				"name": "apple Juice",
 				"how to make": [
-					"asdf"
+					"Blender with a cup of water, sliced kiwis, 1 tablespoon of sugar."
 				]
 			},
 			{
 				"fruit_name": "Apple",
-				"name": "aaaa",
+				"name": "kiwi juice",
 				"how to make": [
-					"aaaa"
+					"peel all kiwi and grind them with 1 teaspoon of sugar"
 				]
 			}
 		],
