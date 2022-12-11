@@ -24,7 +24,7 @@ function readJSON(file, callback) {
 // update my recipe space
 function myRecipe() {
   // read user json file
-  readJSON("./static/user.json", function(text){
+  readJSON("static/user.json", function(text){
     var user_data = JSON.parse(text);
     var json_length=Object.keys(user_data).length;
     console.log(user_data);

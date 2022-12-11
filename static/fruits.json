@@ -33,16 +33,16 @@
 		"my_recipe": [
 			{
 				"fruit_name": "Apple",
-				"name": "asdf",
+				"name": "apple Juice",
 				"how to make": [
-					"asdf"
+					"Blender with a cup of water, sliced kiwis, 1 tablespoon of sugar."
 				]
 			},
 			{
 				"fruit_name": "Apple",
-				"name": "aaaa",
+				"name": "kiwi juice",
 				"how to make": [
-					"aaaa"
+					"peel all kiwi and grind them with 1 teaspoon of sugar"
 				]
 			}
 		],
@@ -50,7 +50,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/4RAwv500cDc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/1mXXwqvihVs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/apple_compote.jpg"
+		"rec_img": "static/img/apple_compote.jpg"
 	},
 	"Banana": {
 		"img": "static/img/banana.png",
@@ -88,7 +88,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/Ob8eL4mMOys\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/n598U_SOUkc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/banana_milk.jpg"
+		"rec_img": "static/img/banana_milk.jpg"
 	},
 	"Kiwi": {
 		"img": "static/img/kiwi.png",
@@ -126,7 +126,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/0RvXsbkSGtY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/MkF3Zu6-5gg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/kiwi_juice.jpg"
+		"rec_img": "static/img/kiwi_juice.jpg"
 	},
 	"Grapefruit": {
 		"img": "static/img/grapefruit.png",
@@ -164,7 +164,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/43FQI0BWPWQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/8ksLJ9mf-TE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/grapefruit_syrup.webp"
+		"rec_img": "static/img/grapefruit_syrup.webp"
 	},
 	"Mandarine": {
 		"img": "static/img/mandarine.png",
@@ -200,18 +200,22 @@
 		"my_recipe": [
 			{
 				"name": "asdf",
-				"how to make": ["asdf"]
+				"how to make": [
+					"asdf"
+				]
 			},
 			{
 				"name": "asdf",
-				"how to make": ["asdf"]
+				"how to make": [
+					"asdf"
+				]
 			}
 		],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/57RB3MakIX8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/-Re4ZtqoFdM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/mandarin_soup.jfif"
+		"rec_img": "static/img/mandarin_soup.jfif"
 	},
 	"Beet": {
 		"img": "static/img/beet.png",
@@ -249,7 +253,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/ThNKjcyco24\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/1M6ZdIZAdAQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/beet_apple_latte.jpg"
+		"rec_img": "static/img/beet_apple_latte.jpg"
 	},
 	"Turnip": {
 		"img": "static/img/turnip.png",
@@ -287,7 +291,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/8rHrtHdxHmQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/IT66AsqaE2Q\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/pickled_turnips.jpg"
+		"rec_img": "static/img/pickled_turnips.jpg"
 	},
 	"Crown Daisy": {
 		"img": "static/img/crown_daisy.png",
@@ -323,14 +327,16 @@
 			{
 				"fruit_name": "Crown Daisy",
 				"name": "new_recipe",
-				"how to make": ["we make ~~~~"]
+				"how to make": [
+					"we make ~~~~"
+				]
 			}
 		],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/EtLNZkT6qE4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/Tg2ZWLEuWm8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/crown_daisy_salad.jpg"
+		"rec_img": "static/img/crown_daisy_salad.jpg"
 	},
 	"Green Onion": {
 		"img": "static/img/green_onion.png",
@@ -363,13 +369,12 @@
 				]
 			}
 		],
-		"my_recipe": [
-		],
+		"my_recipe": [],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/-p_5xjsxESg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/dIIVrMO_fEU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/green_onion_sauce.jpg"
+		"rec_img": "static/img/green_onion_sauce.jpg"
 	},
 	"Pak Choi": {
 		"img": "static/img/pak_choi.png",
@@ -405,14 +410,16 @@
 		"my_recipe": [
 			{
 				"name": "aaaa",
-				"how to make": ["aaaa"]
+				"how to make": [
+					"aaaa"
+				]
 			}
 		],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/lh1qsGDFLhs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/ANisqQXUR7c\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/fried_pak_choi.jpg"
+		"rec_img": "static/img/fried_pak_choi.jpg"
 	},
 	"Tomato": {
 		"img": "static/img/tomato.png",
@@ -450,7 +457,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/Wn8ox93Qhus\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/IdOo9mOUlaU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/tomato_juice.jpg"
+		"rec_img": "static/img/tomato_juice.jpg"
 	},
 	"Carrot": {
 		"img": "static/img/carrot.png",
@@ -488,7 +495,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/imWDu1Mw6vs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/JHoNi3g-Twk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/fried_carrots.jpg"
+		"rec_img": "static/img/fried_carrots.jpg"
 	},
 	"Broccoli": {
 		"img": "static/img/brocolli.png",
@@ -531,7 +538,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/OxLWJ3iZLyg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/WrHDrcHihRc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/broccoli_juice.jpeg"
+		"rec_img": "static/img/broccoli_juice.jpeg"
 	},
 	"Asparagus": {
 		"img": "static/img/asparagus.png",
@@ -573,7 +580,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/b2loY0YqWn0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/eAOTX1Bjfyg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/asparagus_butter.jpg"
+		"rec_img": "static/img/asparagus_butter.jpg"
 	},
 	"Avocado": {
 		"img": "static/img/avocado.png",
@@ -614,7 +621,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/FMGArdg4-pY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/23tGra9KBa0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : " static/img/avocado_toast.jpg"
+		"rec_img": " static/img/avocado_toast.jpg"
 	},
 	"Pepper": {
 		"img": "static/img/pepper.png",
@@ -654,7 +661,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/9PjTJDa9070\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/A6t407fXp7U\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/pepper_carrot.jpg "
+		"rec_img": "static/img/pepper_carrot.jpg "
 	},
 	"Cucumber": {
 		"img": "static/img/cucumber.png",
@@ -692,7 +699,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/zau-F0L_hrY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/ApQUENQbgiY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/cucumber_greentea.webp"
+		"rec_img": "static/img/cucumber_greentea.webp"
 	},
 	"Ginger": {
 		"img": "static/img/ginger.png",
@@ -728,7 +735,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/sp6x9tuDaiU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/1P2vAn6hplQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/ginger_flapjacks.jpg"
+		"rec_img": "static/img/ginger_flapjacks.jpg"
 	},
 	"Bean Sprouts": {
 		"img": "static/img/bean_sprouts.png",
@@ -764,7 +771,7 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/-cACd0cF92Q\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/lDVgo2A1YmU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/chicken_beansprouts.jpg "
+		"rec_img": "static/img/chicken_beansprouts.jpg "
 	},
 	"Cauliflower": {
 		"img": "static/img/cauliflower.png",
@@ -804,6 +811,6 @@
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/T7bN3f70B44\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/BychJBkhKp4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 		],
-		"rec_img" : "static/img/cauliflower_cheese.jpg"
+		"rec_img": "static/img/cauliflower_cheese.jpg"
 	}
 }
