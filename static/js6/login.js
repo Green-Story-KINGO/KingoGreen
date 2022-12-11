@@ -56,6 +56,7 @@ $('.loginPage').click(function() { // This loads the login page
 
     $('.container').fadeOut(0);
     $('.container').fadeIn(1000)
+    $('.container').css({'background-color' :'whitesmoke'})
     
     if(counter ==0 ) {
       $(".topPage").empty();
@@ -209,6 +210,7 @@ function ValidateEmail(email)
 $('.signPage').click(function() { // This brings us to the sign up page
   $('.container').fadeOut(0);
   $('.container').fadeIn(1000) // This fades in and fades out the page
+  $('.container').css({'background-color' :'whitesmoke'})
 
   if( counter == 0) {
     $(".topPage").empty();

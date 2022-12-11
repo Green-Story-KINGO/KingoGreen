@@ -88,6 +88,12 @@ body {
 
 
 }
+.homeText {
+    position:absolute;
+    top:40%;
+    right:40%;
+
+}
 .signPage {
     width:50%;
     height:30px;
@@ -105,3 +111,12 @@ body {
     font-weight: bolder;
 }
 
+.line {
+    background-image:url("../img/line.png");
+    width:100%;
+    height:30px;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    grid-column:1 /5;
+}
