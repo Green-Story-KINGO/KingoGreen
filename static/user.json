@@ -62,5 +62,22 @@
 		"password": "1234",
 		"liked_recipe": [],
 		"my_recipe": []
+	},
+	"jjpark57@hotmail.com": {
+		"user_name": "jjpark57",
+		"password": "1234",
+		"liked_recipe": [
+			{
+				"fruit_name": "Kiwi",
+				"name": "Kiwi Juice",
+				"how to make": [
+					"Peel 2 kiwi and cut them into bite-sized pieces so you can grind them.",
+					"Blender with a cup of water, sliced kiwis, 1 tablespoon of sugar.",
+					"If you put ice in the blender, you can enjoy it as a shake."
+				],
+				"recipe_img": "static/img/kiwi_juice.jpg"
+			}
+		],
+		"my_recipe": []
 	}
 }

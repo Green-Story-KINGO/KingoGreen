@@ -99,9 +99,9 @@ p{
         padding-top:60px;
         line-height: 40px;
         border-radius: 50%;
-        font-size: 20pt;
+        font-size: 16pt;
         color: black;
-        font-weight: bolder;;
+        font-weight: 500;
         text-align: center;
         background-color: #F6DDCC;
         vertical-align: middle;
@@ -109,7 +109,6 @@ p{
 
 #detail_benefit1 {
     grid-column: 2/3;;
-    color:red;
 }
 
 #detail_benefit2 {
@@ -131,6 +130,9 @@ p{
     display:grid;
     grid-template-columns: 2fr 1fr;
 
+}
+.howToPick {
+    margin-top:15px;
 }
 #more {
     grid-column:2/3;
@@ -154,7 +156,12 @@ p{
     grid-column: 1/2;
     margin:50px;
 }
-
+.plusIcon {
+    grid-column: 1/2;
+    position:relative;
+    left:20px;
+    top:0;
+}
 .recipeDescribe {
     grid-column:1/2;
 }

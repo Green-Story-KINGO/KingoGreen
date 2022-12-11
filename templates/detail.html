@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='new_9/detail.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='new_11/detail.css') }}"> 
 
     <title>Document</title>
 </head>
@@ -60,15 +60,15 @@
             <div class="line"></div>      
 
             <div class="description">      
-                <div class="circle" style="font-weight:bolder;"><i class="bi bi-star"></i>
+                <div class="circle" style="font-weight:bolder;"><i class="bi bi-star-fill" style="color: yellow;"></i>
                     Nutrients:</div>
                 <div class="nutrients"  id="detail_nutrients">Vitamin K, Vitamin C, Potassium</div>
-                <div class="season"  style="font-weight:bolder;"><i class="bi bi-star" style="border:#214832"></i> Season</div>
+                <div class="season"  style="font-weight:bolder;"><i class="bi bi-star-fill" style="color: yellow;" style="border:#214832"></i> Season</div>
                 <div class="seasonInfo" id="datail_season"><p>Spring: March ~ May</p><p>Fall: January ~ March</p></div>
-                <div class="howToPick"  style="font-weight:bolder;" id="detail_pick"><i class="bi bi-star"></i> How To Pick
-                <p><br>All cabbages should look bright, with crisp leaves. Avoid those that feel puffy, whose leaves have holes (an insect might have burrowed its way in) or whose outer leaves have been stripped away, which some retailers do to cabbages that start to loose their freshness. Varieties with tightly packed leaves should feel heavy.</p>
-            </div>
-
+                <div class="howToPick"  style="font-weight:bolder;" ><i class="bi bi-star-fill" style="color: yellow;"></i> How To Pick:
+                <div class="pickInfo" id="detail_pick"></div>
+    
+                  </div>
         </div>
         <div class="line"></div>
 
@@ -86,9 +86,9 @@
 
         <div class="recipes">
           <div class="line"></div>
-            <div class="recipeText"> <h1 style="color:green; font-size:30pt; font-weight:400;">Recipes </h1></div>
-            <a href="http://127.0.0.1:8080/morerecipe" id="more_button"style="color:black;" ><i class="bi bi-plus-square"></i>
-            </a>
+            <div class="recipeText"> <h1 style="color:green; font-size:30pt; font-weight:400;">Recipes      <a href="http://127.0.0.1:8080/morerecipe" id="more_button"style="color:black;font-weight:200; font-size:20px;" class="plusIcon" ><i class="bi bi-plus-square"></i>
+            </a></h1></div>
+       
 
 
             <div class="recipeType"  id="detail_recipe_name"><h2>Cabbage Greens <button type="button"c class="btn btn-link" style="position:relatve; left:320px; height:40px;" id="heart"><span class="bi bi-heart" id="heartIcon" style=" color:red; height:40px;"></span></button>
@@ -111,7 +111,7 @@
 
 
 
-<script src="{{url_for('static', filename='js3/detail.js')}}"></script>
+<script src="{{url_for('static', filename='js5/detail.js')}}"></script>
 
 
 </html>

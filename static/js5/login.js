@@ -90,7 +90,7 @@ $('.loginPage').click(function() { // This loads the login page
     // This is where we put the login info
 
     let email = $('<p></p>').text("Username")
-    email.css({'color': 'black', 'font-size': '10pt' , 'width': '100%','margin-bottom' :'3px', 'margin-top': '8px' })
+    email.css({'color': 'black', 'font-size': '10pt' , 'width': '100%','margin-bottom' :'3px', 'margin-top': '8px', 'font-weight': '700' })
     let emailBox = $('<input type=text></input>')
     emailBox.attr('placeholder', 'Username')
     emailBox.css({'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%', 'margin-bottom' :'10px'})
@@ -99,7 +99,7 @@ $('.loginPage').click(function() { // This loads the login page
     $('.info').append(emailBox)
 
     let password = $('<p></p>').text("Password")
-    password.css({'color': 'black', 'font-size': '10pt', 'width': '100%','margin-bottom' :'3px' })
+    password.css({'color': 'black', 'font-size': '10pt', 'width': '100%','margin-bottom' :'3px' , 'font-weight': '700'})
     let passwordBox = $('<input type=password></input>')
     passwordBox.attr('placeholder', 'Password')
     passwordBox.css({'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%', 'margin-bottom' :'10px'})
@@ -243,7 +243,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
 
     // This is where we put the login info
     let firstName = $('<p></p>').text("Username")
-    firstName.css({ 'color': 'black', 'font-size': '10pt' , 'width': '100%', 'margin-bottom' :'3px', 'margin-top' :' 8px'})
+    firstName.css({ 'color': 'black', 'font-size': '10pt' , 'width': '100%', 'margin-bottom' :'3px', 'margin-top' :' 8px', 'font-weight': '700'})
     let firstBox = $('<input type=text></input>')
     firstBox.attr('placeholder', 'Username')
     firstBox.css({'margin-bottom' :'10px','color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
@@ -255,7 +255,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
      
 
     let email = $('<p></p>').text("Email")
-    email.css({'color': 'black', 'font-size': '10pt' , 'width': '100%', 'margin-bottom' :'3px'})
+    email.css({'color': 'black', 'font-size': '10pt' , 'width': '100%', 'margin-bottom' :'3px', 'font-weight': '700'})
     let emailBox = $('<input type=text></input>')
     emailBox.attr('placeholder', 'Email')
     emailBox.css({'margin-bottom' :'10px','color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%'})
@@ -267,7 +267,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
 
 
     let password = $('<p></p>').text("Password")
-    password.css({'color': 'black', 'font-size': '10pt', 'width': '100%', 'margin-bottom' :'3px' })
+    password.css({'color': 'black', 'font-size': '10pt', 'width': '100%', 'margin-bottom' :'3px' , 'font-weight': '700'})
     let passwordBox = $('<input type=password></input>')
     passwordBox.attr('placeholder', 'Password')
     passwordBox.css({ 'margin-bottom' :'10px','color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%', 'margin-bottom' :'10px'})
@@ -276,7 +276,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
     $('.info').append(passwordBox)
     
     let confPassword = $('<p></p>').text("Confirm Password")
-    confPassword.css({'color': 'black', 'font-size': '10pt', 'width': '100%', 'margin-bottom' :'3px' })
+    confPassword.css({'color': 'black', 'font-size': '10pt', 'width': '100%', 'margin-bottom' :'3px', 'font-weight': '700' })
     let confBox = $('<input type=password></input>')
     confBox.attr('placeholder', 'Confirm Password')
     confBox.css({'margin-bottom' :'10px', 'color': ' #384047', 'background-color': 'whitesmoke' , 'border': '1px solid black', 'width': '100%', 'margin-bottom' :'10px'})

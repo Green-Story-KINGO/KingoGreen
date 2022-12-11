@@ -52,14 +52,17 @@ p {
     font-weight:500;
     color:lightgray;
     border-right: 1px black solid;
+    background-color: rgb(27, 34, 45);
 
     
 }
 .myRecipe:hover {
     background-color:orange;
+    color:black;
 }
 .likedRecipe:hover {
     background-color:orange;
+    color:black;
 }
 
 
@@ -71,6 +74,7 @@ p {
     font-size:14pt;
     font-weight:500;
     color:lightgray;
+    background-color: rgb(27, 34, 45);
 }
 
 
@@ -91,6 +95,7 @@ p {
     height:300px;
     width:100%;
     background-position: center;
+    margin-top: 40px;
 }
 
 .recipeType {
