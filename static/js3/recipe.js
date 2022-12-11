@@ -1,4 +1,4 @@
-
+// get current fruit name
 var card_name = location.href.split('?')[1];
 card_name = card_name.replace('%20', ' ');
 
@@ -17,23 +17,20 @@ function readJSON(file, callback) {
 }
 
 
-
+// read fruit json file
 readJSON("static/fruits.json", function(text){
   var fruit_data = JSON.parse(text);
-  
   var json_length=Object.keys(fruit_data).length;
   count=0
   let recipeBox = document.getElementById("recipes");
   for(let i=0;i<json_length;i++){
+    // search current fruit name
     if(Object.keys(fruit_data)[i]==card_name){
+      // add my recipe data to my recipe space
       if(fruit_data[Object.keys(fruit_data)[i]]["my_recipe"].length!=0){
         count+=1
         console.log(fruit_data[Object.keys(fruit_data)[i]]["my_recipe"]);
         
-
-        
-  
-  
         let recipeType = document.createElement("div")
         recipeType.setAttribute("class", "recipeType")
         
@@ -60,25 +57,17 @@ readJSON("static/fruits.json", function(text){
           recipeType.appendChild(recipeName)
           recipeType.appendChild(recipeInstruction)
     
-          //recipeBox.appendChild(recipeImage)
           recipeType.appendChild(line)
           recipeBox.appendChild(recipeType)
         }
-        
-        
-  
-        
-  
-        
-  
-        
+      
   
       }
     }
     
 
   }
-
+  // there are no my recipe data, show message "There are No Other Recipe!"
   if(count==0){
     let line = document.createElement("div")
     line.setAttribute("class", "line")
@@ -94,12 +83,11 @@ readJSON("static/fruits.json", function(text){
 
 })
 
-
+// for 'add recipe form'
 let recipeBox= document.getElementById("recipes")
 let temp = document.createElement("div")
 temp.setAttribute("class", "temp")
 
-// Photo
 let sidebar = document.createElement("section")
 sidebar.setAttribute("class", "sidebar")
 
@@ -115,14 +103,6 @@ titleText.setAttribute("placeholder", "Write a Title")
 
 temp.appendChild(titleWrite)
 temp.appendChild(titleText)
-
-let photoTitle = document.createElement("div")
-photoTitle.setAttribute("class", "photoTitle")
-photoTitle.innerHTML = "Photo"
-
-let photoInput = document.createElement("div")
-photoInput.setAttribute("class", "photoInput")
-photoInput.setAttribute("style", "background-image:url(static/img/banana.png)")
 
 sidebar.appendChild(titleWrite)
 sidebar.appendChild(titleText)
@@ -159,14 +139,15 @@ let pageFinish = document.createElement("button")
 pageFinish.setAttribute("class", "finish")
 pageFinish.innerHTML = "<b>Finish</b>"
 buttonAgain.appendChild(pageFinish)
-// pageFinish.addEventListener("click", addFunction);
+
+// add finish button's click function
 pageFinish.onclick=function(){
   var recipe_name= titleText.value;
   var recipe_info= inputfield.value;
   console.log(recipe_name)
   console.log(recipe_info)
   if(typeof recipe_name!="undefined" && typeof recipe_info!="undefined" ){
-    console.log("hi");
+    // send data to server
     $.ajax({
       type:'POST',
       url:'http://127.0.0.1:8080/updaterecipe',
@@ -203,6 +184,8 @@ recipeBox.appendChild(temp)
 $(".temp").css({"display":"none"});
 
 s =0;
+
+// if click 'add recipe button', alternate 'add recipe form' and 'my recipe space'
 function newRecipe() {
   if(s==0){
     $(".recipeType").css({"display":"none"});

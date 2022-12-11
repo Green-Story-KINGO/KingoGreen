@@ -20,13 +20,16 @@ function readJSON(file, callback) {
 }
 
 
-
+// read fruit json file
 readJSON("static/fruits.json", function(text){
   var fruit_data = JSON.parse(text);
-  
+  // fruit info
   var info = fruit_data[card_name]['info'];
+  // fruit nutrient
   var nutrient = fruit_data[card_name]['nutrient'];
+  // how to choose fruit
   var how_pick = fruit_data[card_name]['how to choose'];
+  // fruit's best time
   var best_time_from = "";
   var best_time_to = "";
   switch(fruit_data[card_name]['best time'][0]){
@@ -111,8 +114,7 @@ readJSON("static/fruits.json", function(text){
     season = best_time_from+" ~ "+best_time_to;
   }
   
-  var best_time_from = fruit_data[card_name]['best time'][0];
-  var best_time_to = fruit_data[card_name]['best time'][1];
+  // read fruit data's effect, image path, recipe image path, youtube link, recipe name, recipe information
   var effect = fruit_data[card_name]['effect'];
   var img_path = fruit_data[card_name]['img'];
   var video_path = fruit_data[card_name]['youtube'];
@@ -124,6 +126,7 @@ readJSON("static/fruits.json", function(text){
   card_recipe_name=recipe_name;
   card_recipe_info=recipe_info;
 
+  // update detail.html's fruit information
   document.getElementById("detail_name").innerText = card_name;
   document.getElementById("detail_nutrients").innerText = nutrient[0]+', '+nutrient[1];
   document.getElementById("detail_pick").innerText = how_pick;
@@ -137,7 +140,6 @@ readJSON("static/fruits.json", function(text){
   document.getElementById("detail_benefit4").innerText = effect[3];
   document.getElementById("more_button").href = "http://127.0.0.1:8080/morerecipe?"+card_name;
   document.getElementById("detail_recipe_img").style.backgroundImage= "url("+recipe_img+")";
-
   var info = "<h3 id='r_name'>"+recipe_name+"</h3>"+"<br><br>";
   for(var i=0;i<recipe_info.length;i++){
     order = i+1;
@@ -148,13 +150,14 @@ readJSON("static/fruits.json", function(text){
   document.getElementById("video_path2").innerHTML = video_path[1];
 
 })
+// for heart icon
 var check =0;
 readJSON("./static/user.json", function(text){
   var user_data = JSON.parse(text);
   
   var json_length=Object.keys(user_data).length;
   for(let i=0;i<json_length;i++){
-    
+    // if user has the fruit's recipe, check is 1
     if(user_data[Object.keys(user_data)[i]]["user_name"]==curname){
       var liked_recipe_length=user_data[Object.keys(user_data)[i]]["liked_recipe"].length
       for(let j=0;j<liked_recipe_length;j++){
@@ -166,8 +169,7 @@ readJSON("./static/user.json", function(text){
       
     }
   }
-
-  //$('#heart').remove()
+  // initialize heart icon
   let heart = document.createElement("button")
   heart.style.position="relatve"; 
   heart.style.left="320px";
@@ -175,30 +177,29 @@ readJSON("./static/user.json", function(text){
   heart.setAttribute("class", "btn btn-link" )
   heart.setAttribute("id", "heart")
   heart.addEventListener("click", fillHeart);
-  //let r_name = document.getElementById("r_name")
   let fill = document.createElement("span")
+  // if user has the fruit's recipe, fill heart icon with red color
   if(check==1){
     fill.setAttribute("class", "bi bi-heart-fill")
   }
+  // if user has the fruit's recipe, heart icon is empty
   else{
     fill.setAttribute("class", "bi bi-heart")
   }
   
   fill.style.color = "red";
   fill.style.height = "40px";
-  //fill.onclick="fillHeart()"
-  
 
   heart.appendChild(fill)
   a=document.getElementById("r_name");
   a.appendChild(heart)
-  console.log("hihi2")
 });
 
 
+// if user click heart icon button
 function fillHeart() {
   var new_info ={"recipe":card_recipe_info};
-  console.log("hihi")
+  // send data to server
   $.ajax({
     type:'POST',
     url:'http://127.0.0.1:8080/updatefav',
@@ -213,6 +214,7 @@ function fillHeart() {
 
     success:function(data)
     { 
+      // update heart icon button
       $('#heart').remove()
       let heart = document.createElement("button")
       heart.style.position="relatve"; 
@@ -221,22 +223,17 @@ function fillHeart() {
       heart.setAttribute("class", "btn btn-link" )
       heart.setAttribute("id", "heart")
       heart.addEventListener("click", fillHeart);
-      //let r_name = document.getElementById("r_name")
       let fill = document.createElement("span")
       if(data['exist']==1){
-        console.log("hi1")
+          // if user has the fruit's recipe, fill heart icon with red color
         fill.setAttribute("class", "bi bi-heart-fill")
       }
+        // if user has the fruit's recipe, heart icon is empty
       else{
-        console.log("hi2")
         fill.setAttribute("class", "bi bi-heart")
       }
-      
       fill.style.color = "red";
       fill.style.height = "40px";
-      //fill.onclick="fillHeart()"
-    
-  
       heart.appendChild(fill)
       a=document.getElementById("r_name");
       a.appendChild(heart)
@@ -247,29 +244,5 @@ function fillHeart() {
         alert('error');
     }
     });
-  //   var check =0;
-  // readJSON("./static/user.json", function(text){
-  //     var user_data = JSON.parse(text);
-    
-  //   var json_length=Object.keys(user_data).length;
-  //   for(let i=0;i<json_length;i++){
-      
-  //     if(user_data[Object.keys(user_data)[i]]["user_name"]==curname){
-  //       var liked_recipe_length=user_data[Object.keys(user_data)[i]]["liked_recipe"].length
-  //       for(let j=0;j<liked_recipe_length;j++){
-  //         console.log(user_data[Object.keys(user_data)[i]]["liked_recipe"][j]["fruit_name"])
-  //         console.log(card_name);
-  //         if(user_data[Object.keys(user_data)[i]]["liked_recipe"][j]["fruit_name"]==card_name){
-  //           check =1;
-  //           break
-  //         }
-  //       }
-        
-  //     }
-  //   }
-  
-    
-    
-  // });
   
 }
