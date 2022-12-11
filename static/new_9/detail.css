@@ -96,7 +96,8 @@ p{
     grid-column:2/3;
         width: 200px;
         height:200px;
-        line-height: 200px;
+        padding-top:60px;
+        line-height: 40px;
         border-radius: 50%;
         font-size: 20pt;
         color: black;
