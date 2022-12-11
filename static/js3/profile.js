@@ -56,7 +56,7 @@ function myRecipe() {
             let recipeName = document.createElement("h2")
             recipe_name=recipe_data[k]["name"]
             fruit_name = recipe_data[k]["fruit_name"];
-            recipe_name= "<a href="+"http://172.30.1.100:8080/detail?"+fruit_name+" style='color: black'>"+recipe_name+"</a>";
+            recipe_name= "<a href="+"http://127.0.0.1:8080/detail?"+fruit_name+" style='color: black'>"+recipe_name+"</a>";
             recipeName.innerHTML = recipe_name;
 
             let recipeInstruction = document.createElement("p")
@@ -105,7 +105,7 @@ function myRecipe() {
 
 function favRecipe() {
     
-    readJSON("./static/user.json", function(text){
+    readJSON("static/user.json", function(text){
       var user_data = JSON.parse(text);
       var json_length=Object.keys(user_data).length;
       console.log(user_data);
@@ -121,9 +121,7 @@ function favRecipe() {
             count+=1;
             
     
-            let recipeImage = document.createElement("div")
-            recipeImage.setAttribute("class", "recipeImage")
-      
+
       
             let recipeType = document.createElement("div")
             recipeType.setAttribute("class", "recipeType")
@@ -132,15 +130,22 @@ function favRecipe() {
             console.log(recipe_data[0]);
     
             for(var k=0;k<recipe_data.length;k++){
+              recipe_img=recipe_data[k]["recipe_img"]
+              let recipeImage = document.createElement("div")
+              recipeImage.setAttribute("class", "recipeImage")
+              recipeImage.style.backgroundImage= "url("+recipe_img+")";
+
+
               let recipeName = document.createElement("h2")
               recipe_name=recipe_data[k]["name"]
               fruit_name = recipe_data[k]["fruit_name"];
-              recipe_name= "<a href="+"http://172.30.1.100:8080/detail?"+fruit_name+" style='color: black'>"+recipe_name+"</a>";
+              recipe_name= "<a href="+"http://127.0.0.1:8080/detail?"+fruit_name+" style='color: black'>"+recipe_name+"</a>";
               recipeName.innerHTML = recipe_name;
     
               let recipeInstruction = document.createElement("p")
               recipe_info=recipe_data[k]["how to make"]
               info_string = ""
+              console.log(recipe_data[k])
               for(var j=0;j<recipe_info.length;j++){
                 var order = j+1
                 info_string=info_string+"<b>"+order+". "+"</b>"+ recipe_info[j] +"<br><br>";
@@ -148,11 +153,11 @@ function favRecipe() {
               recipeInstruction.innerHTML = info_string;
               let line = document.createElement("div")
               line.setAttribute("class", "line")
-        
+              recipeType.appendChild(recipeImage)
               recipeType.appendChild(recipeName)
               recipeType.appendChild(recipeInstruction)
         
-              recipeBox.appendChild(recipeImage)
+
               recipeBox.appendChild(recipeType)
               recipeType.appendChild(line)
             }

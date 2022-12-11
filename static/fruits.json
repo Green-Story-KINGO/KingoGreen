@@ -200,11 +200,11 @@
 		"my_recipe": [
 			{
 				"name": "asdf",
-				"how to make": "asdf"
+				"how to make": ["asdf"]
 			},
 			{
 				"name": "asdf",
-				"how to make": "asdf"
+				"how to make": ["asdf"]
 			}
 		],
 		"youtube": [
@@ -323,7 +323,7 @@
 			{
 				"fruit_name": "Crown Daisy",
 				"name": "new_recipe",
-				"how to make": ["new_recipe"]
+				"how to make": ["we make ~~~~"]
 			}
 		],
 		"youtube": [
@@ -364,8 +364,6 @@
 			}
 		],
 		"my_recipe": [
-			{
-			}
 		],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/-p_5xjsxESg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
@@ -407,7 +405,7 @@
 		"my_recipe": [
 			{
 				"name": "aaaa",
-				"how to make": "aaaa"
+				"how to make": ["aaaa"]
 			}
 		],
 		"youtube": [

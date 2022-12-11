@@ -4,6 +4,7 @@ console.log(card_name);
 let curname = window.localStorage.getItem("curUser");
 card_recipe_name = "";
 card_recipe_info = null;
+card_recipe_img = null;
 
 // https://juni-official.tistory.com/141
 function readJSON(file, callback) {
@@ -115,7 +116,8 @@ readJSON("static/fruits.json", function(text){
   var effect = fruit_data[card_name]['effect'];
   var img_path = fruit_data[card_name]['img'];
   var video_path = fruit_data[card_name]['youtube'];
-
+  var recipe_img = fruit_data[card_name]['rec_img'];
+  card_recipe_img=recipe_img;
   var recipe= fruit_data[card_name]['rec_recipe'];
   var recipe_name = recipe[0]["name"];
   var recipe_info = recipe[0]["how to make"];
@@ -133,8 +135,9 @@ readJSON("static/fruits.json", function(text){
   document.getElementById("detail_benefit2").innerText = effect[1];
   document.getElementById("detail_benefit3").innerText = effect[2];
   document.getElementById("detail_benefit4").innerText = effect[3];
-  document.getElementById("more_button").href = "http://172.30.1.100:8080/morerecipe?"+card_name;
-  
+  document.getElementById("more_button").href = "http://127.0.0.1:8080/morerecipe?"+card_name;
+  document.getElementById("detail_recipe_img").style.backgroundImage= "url("+recipe_img+")";
+
   var info = "<h3 id='r_name'>"+recipe_name+"</h3>"+"<br><br>";
   for(var i=0;i<recipe_info.length;i++){
     order = i+1;
@@ -198,12 +201,13 @@ function fillHeart() {
   console.log("hihi")
   $.ajax({
     type:'POST',
-    url:'http://172.30.1.100:8080/updatefav',
+    url:'http://127.0.0.1:8080/updatefav',
     data:{
       "user_name": window.localStorage.getItem("curUser"),
       "fruit_name": card_name,
       "recipe_name": card_recipe_name,
       "recipe_info": JSON.stringify(new_info),
+      "recipe_img" : card_recipe_img,
     },
     dataType: 'json',
 
