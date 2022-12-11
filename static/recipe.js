@@ -63,7 +63,7 @@ readJSON("static/fruits.json", function(text){
           recipeType.appendChild(recipeName)
           recipeType.appendChild(recipeInstruction)
     
-          recipeBox.appendChild(recipeImage)
+          //recipeBox.appendChild(recipeImage)
           recipeBox.appendChild(recipeType)
           recipeBox.appendChild(line)
         }
@@ -126,8 +126,6 @@ photoInput.setAttribute("style", "background-image:url(static/img/banana.png)")
 sidebar.appendChild(titleWrite)
 sidebar.appendChild(titleText)
 
-sidebar.appendChild(photoTitle)
-sidebar.appendChild(photoInput)
 temp.appendChild(sidebar)
 
 // Text
@@ -183,6 +181,7 @@ pageFinish.onclick=function(){
       { 
         $(".recipeType").css({"display":""});
         $(".temp").css({"display":"none"});
+        $(".line").css({"display":""});
         s=0;
         alert('Add My Recipe!');
           
@@ -207,11 +206,13 @@ function newRecipe() {
   if(s==0){
     $(".recipeType").css({"display":"none"});
     $(".temp").css({"display":""});
+    $(".line").css({"display":"none"});
     s=1;
   }
   else{
     $(".recipeType").css({"display":""});
     $(".temp").css({"display":"none"});
+    $(".line").css({"display":""});
     s=0;
   }
  
