@@ -96,7 +96,7 @@ function myRecipe() {
 
 function favRecipe() {
     
-    readJSON("static/user.json", function(text){
+    readJSON("./static/user.json", function(text){
       var user_data = JSON.parse(text);
       var json_length=Object.keys(user_data).length;
       console.log(user_data);

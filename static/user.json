@@ -76,8 +76,35 @@
 					"If you put ice in the blender, you can enjoy it as a shake."
 				],
 				"recipe_img": "static/img/kiwi_juice.jpg"
+			},
+			{
+				"fruit_name": "Crown Daisy",
+				"name": "Crown Daisy Salad",
+				"how to make": [
+					"For 1 layer of crown daisy, use the tender leaf part. Cut the 10cm long green onion in half and shred it. Tear 1 sheet of toasted seaweed into small pieces with your hands.",
+					"Chop crown daisy, green onion, and seaweed into a bowl, and sprinkle with a dressing of 2 teaspoons each of soy sauce, vinegar, and salad oil and 1/2 teaspoon of sugar."
+				],
+				"recipe_img": "static/img/crown_daisy_salad.jpg"
+			},
+			{
+				"fruit_name": "Apple",
+				"name": "Apple Compote",
+				"how to make": [
+					"Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds",
+					"In a heat-resistant container, add 1/2 cup of white wine and 1/2 cup of water and 40g of sugar and mix well. Add an apple and 4 sliced lemons, cover and heat in the microwave for 5 minutes. Take it out of the microwave, turn it upside down, cover it again and heat it for 5 minutes.",
+					"Transfer to a bowl and garnish with an appropriate amount of mint leaves. It is delicious even if you put it in the refrigerator and eat it cold."
+				],
+				"recipe_img": "static/img/apple_compote.jpg"
 			}
 		],
-		"my_recipe": []
+		"my_recipe": [
+			{
+				"fruit_name": "Kiwi",
+				"name": "Kiwi Smoothie",
+				"how to make": [
+					"We slice the kiwi into small bits and then place them inside a cup. We then go on to poor milk into the cup and add ice. Fin."
+				]
+			}
+		]
 	}
 }
