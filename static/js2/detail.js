@@ -189,13 +189,11 @@ readJSON("./static/user.json", function(text){
   heart.appendChild(fill)
   a=document.getElementById("r_name");
   a.appendChild(heart)
-  console.log("hihi2")
 });
 
 
 function fillHeart() {
   var new_info ={"recipe":card_recipe_info};
-  console.log("hihi")
   $.ajax({
     type:'POST',
     url:'http://172.30.1.100:8080/updatefav',
@@ -220,11 +218,9 @@ function fillHeart() {
       //let r_name = document.getElementById("r_name")
       let fill = document.createElement("span")
       if(data['exist']==1){
-        console.log("hi1")
         fill.setAttribute("class", "bi bi-heart-fill")
       }
       else{
-        console.log("hi2")
         fill.setAttribute("class", "bi bi-heart")
       }
       

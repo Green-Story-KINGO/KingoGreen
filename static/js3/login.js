@@ -124,11 +124,6 @@ $('.loginPage').click(function() { // This loads the login page
             temp = true
             //if(emailBox.val() == UserEmail && passwordBox.val() == UserPassword){ // Validates the email and password
             if(temp){ // Validates the email and password
-                
-
-                
-
-
                 $.ajax({
                   type:'POST',
                   url:'http://172.30.1.100:8080/updateuser',

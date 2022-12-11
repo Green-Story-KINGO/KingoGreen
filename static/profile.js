@@ -64,29 +64,26 @@ function myRecipe() {
             info_string = ""
             console.log(recipe_info.length);
             for(var j=0;j<recipe_info.length;j++){
-              var order = j+1
+              //var order = j+1
               info_string=info_string+ recipe_info[j] +"<br><br>";
             }
             recipeInstruction.innerHTML = info_string;
-
+            let line = document.createElement("div")
+            line.setAttribute("class", "line")
       
             recipeType.appendChild(recipeName)
             recipeType.appendChild(recipeInstruction)
       
-            // recipeBox.appendChild(recipeImage)
+            recipeBox.appendChild(recipeImage)
             recipeBox.appendChild(recipeType)
-            
-            let line = document.createElement("div")
-            line.setAttribute("class", "line")
-            recipeType.appendChild(line)
+            recipeBox.appendChild(line)
           }
         }
              
   
       }
-
+  
     }
-    
     if(count==0){
       let recipeType = document.createElement("div")
       recipeType.setAttribute("class", "recipeType")
@@ -154,7 +151,7 @@ function favRecipe() {
         
               recipeBox.appendChild(recipeImage)
               recipeBox.appendChild(recipeType)
-              recipeType.appendChild(line)
+              recipeBox.appendChild(line)
             }
           }
           
@@ -167,11 +164,8 @@ function favRecipe() {
         recipeType.setAttribute("class", "recipeType")
         let recipeName = document.createElement("h2")
         recipeName.innerHTML = "There are No Liked Recipe!";
-        let line = document.createElement("div")
-        line.setAttribute("class", "line")
         recipeType.appendChild(recipeName)
         recipeBox.appendChild(recipeType)
-        recipeType.appendChild(line)
       }
       $('.recipes').fadeIn(1000) //
       

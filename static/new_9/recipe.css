@@ -197,3 +197,6 @@ margin-top: 20px;
     grid-column:2/3;
     margin-right:30px;
 }
+p{
+  text-align: left;
+}

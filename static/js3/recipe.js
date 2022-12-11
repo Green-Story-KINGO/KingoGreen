@@ -30,12 +30,8 @@ readJSON("static/fruits.json", function(text){
         count+=1
         console.log(fruit_data[Object.keys(fruit_data)[i]]["my_recipe"]);
         
+
         
-  
-        
-  
-        let recipeImage = document.createElement("div")
-        recipeImage.setAttribute("class", "recipeImage")
   
   
         let recipeType = document.createElement("div")
@@ -54,18 +50,18 @@ readJSON("static/fruits.json", function(text){
           info_string = ""
           for(var j=0;j<recipe_info.length;j++){
             var order = j+1
-            info_string=info_string+"<b>"+order+". "+"</b>"+ recipe_info[j] +"<br><br>";
+            info_string=info_string+ recipe_info[j] +"<br><br>";
           }
           recipeInstruction.innerHTML = info_string;
-          let line = document.createElement("div")
-          line.setAttribute("class", "line")
+          // let line = document.createElement("div")
+          // line.setAttribute("class", "line")
     
           recipeType.appendChild(recipeName)
           recipeType.appendChild(recipeInstruction)
     
           //recipeBox.appendChild(recipeImage)
           recipeBox.appendChild(recipeType)
-          recipeBox.appendChild(line)
+          // recipeBox.appendChild(line)
         }
         
         

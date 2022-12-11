@@ -30,16 +30,16 @@
 				]
 			}
 		],
-    "my_recipe": [
-			{ 
-        "fruit_name": "Apple",
+		"my_recipe": [
+			{
+				"fruit_name": "Apple",
 				"name": "asdf",
 				"how to make": [
 					"asdf"
 				]
 			},
 			{
-        "fruit_name": "Apple",
+				"fruit_name": "Apple",
 				"name": "aaaa",
 				"how to make": [
 					"aaaa"
@@ -319,7 +319,13 @@
 				]
 			}
 		],
-		"my_recipe": [],
+		"my_recipe": [
+			{
+				"fruit_name": "Crown Daisy",
+				"name": "new_recipe",
+				"how to make": ["new_recipe"]
+			}
+		],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/EtLNZkT6qE4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/Tg2ZWLEuWm8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -359,8 +365,6 @@
 		],
 		"my_recipe": [
 			{
-				"name": "",
-				"how to make": ""
 			}
 		],
 		"youtube": [

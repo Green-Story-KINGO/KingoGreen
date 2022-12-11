@@ -3,29 +3,79 @@
 		"user_name": "jys",
 		"password": "1234",
 		"liked_recipe": [
-			{ 
-        "fruit_name": "Apple",
+			{
+				"fruit_name": "Apple",
 				"name": "Apple Compote",
 				"how to make": [
 					"Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds",
 					"In a heat-resistant container, add 1/2 cup of white wine and 1/2 cup of water and 40g of sugar and mix well. Add an apple and 4 sliced lemons, cover and heat in the microwave for 5 minutes. Take it out of the microwave, turn it upside down, cover it again and heat it for 5 minutes.",
 					"Transfer to a bowl and garnish with an appropriate amount of mint leaves. It is delicious even if you put it in the refrigerator and eat it cold."
 				]
+			},
+			{
+				"fruit_name": "Green Onion",
+				"name": "Steamed Green Onion and Mustard Soybean Paste",
+				"how to make": [
+					[
+						"Cut 1 strip of green onion into 5cm lengths.",
+						"Arrange the green onions side by side on a heat-resistant dish, sprinkle with 1 tablespoon of water, cover with plastic wrap, and heat in the microwave for 2 minutes.",
+						"Put the green onion in a bowl and pour the sauce made by mixing 1 tablespoon each of soybean paste and vinegar, 1 teaspoon sugar, and 1/2 teaspoon light mustard."
+					]
+				]
+			},
+			{
+				"fruit_name": "Crown Daisy",
+				"name": "Crown Daisy Salad",
+				"how to make": [
+					[
+						"For 1 layer of crown daisy, use the tender leaf part. Cut the 10cm long green onion in half and shred it. Tear 1 sheet of toasted seaweed into small pieces with your hands.",
+						"Chop crown daisy, green onion, and seaweed into a bowl, and sprinkle with a dressing of 2 teaspoons each of soy sauce, vinegar, and salad oil and 1/2 teaspoon of sugar."
+					]
+				]
+			},
+			{
+				"fruit_name": "Mandarine",
+				"name": "Mandarine Syrup",
+				"how to make": [
+					[
+						"Peel 3 mandarine and cut them into bite-sized pieces so you can put into bottle.",
+						"Pour mandarine and sugar alternately into the bottle.",
+						"Let it mature for about a week and eat it with soda."
+					]
+				]
+			},
+			{
+				"fruit_name": "Tomato",
+				"name": "Tomato Juice",
+				"how to make": [
+					[
+						"Peel 2 tomato and cut them into bite-sized pieces so you can grind them.",
+						"Blender with a cup of water, sliced tomato, 1 tablespoon of sugar.",
+						"If you put ice in the blender, you can enjoy it as a shake."
+					]
+				]
 			}
 		],
 		"my_recipe": [
-			{ 
-        "fruit_name": "Apple",
+			{
+				"fruit_name": "Apple",
 				"name": "asdf",
 				"how to make": [
 					"asdf"
 				]
 			},
 			{
-        "fruit_name": "Apple",
+				"fruit_name": "Apple",
 				"name": "aaaa",
 				"how to make": [
 					"aaaa"
+				]
+			},
+			{
+				"fruit_name": "Crown Daisy",
+				"name": "new_recipe",
+				"how to make": [
+					"1. new_recipe"
 				]
 			}
 		]

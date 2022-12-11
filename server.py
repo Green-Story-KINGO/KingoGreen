@@ -121,7 +121,7 @@ def updateRecipe():
       json_data[key]['my_recipe'].append({
         "fruit_name":fruit_name,
         "name": recipe_name,
-				"how to make": recipe_info
+				"how to make": [recipe_info]
       })
       break
   
@@ -155,27 +155,42 @@ def updateRecipe():
 def updateFav():
   result={}
   data = request.form.to_dict()
-  user_name = data['name']
+  print(data)
+  print(data['recipe_info'])
+  user_name = data['user_name']
+  fruit_name = data['fruit_name']
   recipe_name = data['recipe_name']
-  recipe_info = data['recipe_info']
+  recipe_info = json.loads(data['recipe_info'])['recipe']
+  
   json_data=None
   with open('static/user.json', 'r', encoding="utf-8")as f:
     json_data = json.load(f)
   
-  exist = 0
   
+  result['exist']=1
   for i in range(len(json_data.keys())):
     key = list(json_data.keys())[i]
-    if(json_data[key]["user_name"]==name):
-      json_data[key]['liked_recipe'].append({
-        "name": recipe_name,
-				"how to make": recipe_info
-      })
+    if(json_data[key]["user_name"]==user_name):
+      check =0
+      order = -1
+      for j in range(len(json_data[key]['liked_recipe'])):
+        if(json_data[key]['liked_recipe'][j]["fruit_name"]==fruit_name):
+          order = j
+          check=1
+          result['exist']=0
+      if(check==0):
+        json_data[key]['liked_recipe'].append({
+          "fruit_name":fruit_name,
+          "name": recipe_name,
+          "how to make": [recipe_info]
+        })
+      else:
+        del json_data[key]['liked_recipe'][order]
       break
   
   with open('static/user.json', 'w', encoding="utf-8")as make_file:
     json.dump(json_data, make_file, ensure_ascii=False, indent="\t")
-
+  
   return result
 
 
