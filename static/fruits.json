@@ -377,7 +377,15 @@
 				]
 			}
 		],
-		"my_recipe": [],
+		"my_recipe": [
+			{
+				"fruit_name": "Green Onion",
+				"name": "Pak Choi Salad",
+				"how to make": [
+					"Chop it up into small pieces and add some other vegetables"
+				]
+			}
+		],
 		"youtube": [
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/-p_5xjsxESg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
 			"<iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/dIIVrMO_fEU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
@@ -420,6 +428,13 @@
 				"name": "aaaa",
 				"how to make": [
 					"aaaa"
+				]
+			},
+			{
+				"fruit_name": "Pak Choi",
+				"name": "new_recipe",
+				"how to make": [
+					"new_recipe"
 				]
 			}
 		],

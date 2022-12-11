@@ -13,6 +13,14 @@
 				"recipe_img": "static/img/crown_daisy_salad.jpg"
 			},
 			{
+				"fruit_name": "Asparagus",
+				"name": "Asparagus with Butter",
+				"how to make": [
+					"Discard the tough bottoms of the spear, put butter in wide skillet over medium-high heat. Cook until the asparagus is firm-tender about 3 minutes. Add lemon juice and zest to the butter."
+				],
+				"recipe_img": "static/img/asparagus_butter.jpg"
+			},
+			{
 				"fruit_name": "Kiwi",
 				"name": "Kiwi Juice",
 				"how to make": [
@@ -21,14 +29,6 @@
 					"If you put ice in the blender, you can enjoy it as a shake."
 				],
 				"recipe_img": "static/img/kiwi_juice.jpg"
-			},
-			{
-				"fruit_name": "Asparagus",
-				"name": "Asparagus with Butter",
-				"how to make": [
-					"Discard the tough bottoms of the spear, put butter in wide skillet over medium-high heat. Cook until the asparagus is firm-tender about 3 minutes. Add lemon juice and zest to the butter."
-				],
-				"recipe_img": "static/img/asparagus_butter.jpg"
 			},
 			{
 				"fruit_name": "Pak Choi",
@@ -69,13 +69,38 @@
 				"how to make": [
 					"peel all kiwi and grind them with 1 teaspoon of sugar"
 				]
+			},
+			{
+				"fruit_name": "Green Onion",
+				"name": "Pak Choi Salad",
+				"how to make": [
+					"Chop it up into small pieces and add some other vegetables"
+				]
+			},
+			{
+				"fruit_name": "Pak Choi",
+				"name": "new_recipe",
+				"how to make": [
+					"new_recipe"
+				]
 			}
 		]
 	},
 	"pjs@naver": {
 		"user_name": "pjs",
 		"password": "1234",
-		"liked_recipe": [],
+		"liked_recipe": [
+			{
+				"fruit_name": "Apple",
+				"name": "Apple Compote",
+				"how to make": [
+					"Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds",
+					"In a heat-resistant container, add 1/2 cup of white wine and 1/2 cup of water and 40g of sugar and mix well. Add an apple and 4 sliced lemons, cover and heat in the microwave for 5 minutes. Take it out of the microwave, turn it upside down, cover it again and heat it for 5 minutes.",
+					"Transfer to a bowl and garnish with an appropriate amount of mint leaves. It is delicious even if you put it in the refrigerator and eat it cold."
+				],
+				"recipe_img": "static/img/apple_compote.jpg"
+			}
+		],
 		"my_recipe": []
 	},
 	"jjpark57@hotmail.com": {
@@ -93,6 +118,16 @@
 				"recipe_img": "static/img/kiwi_juice.jpg"
 			},
 			{
+				"fruit_name": "Apple",
+				"name": "Apple Compote",
+				"how to make": [
+					"Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds",
+					"In a heat-resistant container, add 1/2 cup of white wine and 1/2 cup of water and 40g of sugar and mix well. Add an apple and 4 sliced lemons, cover and heat in the microwave for 5 minutes. Take it out of the microwave, turn it upside down, cover it again and heat it for 5 minutes.",
+					"Transfer to a bowl and garnish with an appropriate amount of mint leaves. It is delicious even if you put it in the refrigerator and eat it cold."
+				],
+				"recipe_img": "static/img/apple_compote.jpg"
+			},
+			{
 				"fruit_name": "Crown Daisy",
 				"name": "Crown Daisy Salad",
 				"how to make": [
@@ -102,14 +137,22 @@
 				"recipe_img": "static/img/crown_daisy_salad.jpg"
 			},
 			{
-				"fruit_name": "Apple",
-				"name": "Apple Compote",
+				"fruit_name": "Beet",
+				"name": "Beet Apple Latte",
 				"how to make": [
-					"Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds",
-					"In a heat-resistant container, add 1/2 cup of white wine and 1/2 cup of water and 40g of sugar and mix well. Add an apple and 4 sliced lemons, cover and heat in the microwave for 5 minutes. Take it out of the microwave, turn it upside down, cover it again and heat it for 5 minutes.",
-					"Transfer to a bowl and garnish with an appropriate amount of mint leaves. It is delicious even if you put it in the refrigerator and eat it cold."
+					"1/3 of the beets are peeled and shredded. 1/2 of the apples, stems removed, peeled and shredded.",
+					"In a bowl, add 1 tablespoon of lemon juice and olive oil, 1/2 teaspoon of sugar, 1/3 teaspoon of salt, and a little bit of black pepper, mix, then add shredded beets and apples and mix well again.",
+					"You can keep it in an airtight container in the refrigerator for 3-4 days."
 				],
-				"recipe_img": "static/img/apple_compote.jpg"
+				"recipe_img": "static/img/beet_apple_latte.jpg"
+			},
+			{
+				"fruit_name": "Avocado",
+				"name": "Smashed avocado on toast",
+				"how to make": [
+					"Cut the avocado in half and carefully remove its stone. Scoop out the flesh into a bowl and squeeze lemon juice then mash with a fork until desired texture. Season to taste with sea salt, black pepper and chilli flakes. Toast your bread, drizzle over the oil then pile the avocado on top"
+				],
+				"recipe_img": " static/img/avocado_toast.jpg"
 			}
 		],
 		"my_recipe": [

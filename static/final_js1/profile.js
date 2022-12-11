@@ -108,7 +108,7 @@ function favRecipe() {
       for(let i=0;i<json_length;i++){
         
         if(user_data[Object.keys(user_data)[i]]["user_name"]==curname){
-          if(user_data[Object.keys(user_data)[i]]["my_recipe"].length!=0){
+          if(user_data[Object.keys(user_data)[i]]["liked_recipe"].length !=0){
             count+=1;
             
     
