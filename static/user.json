@@ -3,7 +3,8 @@
 		"user_name": "jys",
 		"password": "1234",
 		"liked_recipe": [
-			{
+			{ 
+        "fruit_name": "Apple",
 				"name": "Apple Compote",
 				"how to make": [
 					"Wash 1 apple well, cut it into 6 pieces lengthwise with the peel on, and remove the seeds",
@@ -13,13 +14,15 @@
 			}
 		],
 		"my_recipe": [
-			{
+			{ 
+        "fruit_name": "Apple",
 				"name": "asdf",
 				"how to make": [
 					"asdf"
 				]
 			},
 			{
+        "fruit_name": "Apple",
 				"name": "aaaa",
 				"how to make": [
 					"aaaa"

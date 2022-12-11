@@ -55,6 +55,8 @@ function myRecipe() {
           for(var k=0;k<recipe_data.length;k++){
             let recipeName = document.createElement("h2")
             recipe_name=recipe_data[k]["name"]
+            fruit_name = recipe_data[k]["fruit_name"];
+            recipe_name= "<a href="+"http://172.30.1.100:8080/detail?"+fruit_name+" style='color: black'>"+recipe_name+"</a>";
             recipeName.innerHTML = recipe_name;
 
             let recipeInstruction = document.createElement("p")
@@ -129,6 +131,8 @@ function favRecipe() {
             for(var k=0;k<recipe_data.length;k++){
               let recipeName = document.createElement("h2")
               recipe_name=recipe_data[k]["name"]
+              fruit_name = recipe_data[k]["fruit_name"];
+              recipe_name= "<a href="+"http://172.30.1.100:8080/detail?"+fruit_name+" style='color: black'>"+recipe_name+"</a>";
               recipeName.innerHTML = recipe_name;
     
               let recipeInstruction = document.createElement("p")

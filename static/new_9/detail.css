@@ -93,6 +93,20 @@ p{
     margin-right:30px;
 }
 .benefitCircle {
+<<<<<<< HEAD:static/new_8/detail.css
+  grid-column:2/3;
+      width: 200px;
+      height:200px;
+      padding-top:60px;
+      line-height: 40px;
+      border-radius: 50%;
+      font-size: 20pt;
+      color: black;
+      font-weight: bolder;;
+      text-align: center;
+      background-color: #F6DDCC;
+      vertical-align: middle;
+=======
     grid-column:2/3;
         width: 200px;
         height:200px;
@@ -105,6 +119,7 @@ p{
         text-align: center;
         background-color: #F6DDCC;
         vertical-align: middle;
+>>>>>>> 58d4167071998bd8d9ea0c05ad23316654afaf62:static/new_9/detail.css
 }
 
 #detail_benefit1 {
