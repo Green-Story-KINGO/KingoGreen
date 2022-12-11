@@ -160,6 +160,7 @@ def updateFav():
   user_name = data['user_name']
   fruit_name = data['fruit_name']
   recipe_name = data['recipe_name']
+  recipe_img = data['recipe_img']
   recipe_info = json.loads(data['recipe_info'])['recipe']
   
   json_data=None
@@ -182,7 +183,8 @@ def updateFav():
         json_data[key]['liked_recipe'].append({
           "fruit_name":fruit_name,
           "name": recipe_name,
-          "how to make": [recipe_info]
+          "how to make": recipe_info,
+          "recipe_img" : recipe_img
         })
       else:
         del json_data[key]['liked_recipe'][order]

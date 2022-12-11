@@ -25,7 +25,7 @@ readJSON("static/fruits.json", function(text){
       card_element.className = 'item';
       const card_a = document.createElement('a');
       card_a.className = 'card';
-      card_a.href='http://192.168.35.93:8080/detail?'+name;
+      card_a.href='http://127.0.0.1:8080/detail?'+name;
       const card_div = document.createElement('div');
       card_div.className = 'thumb';
       var img_path = "url("+fruit_data[Object.keys(fruit_data)[i]]['img']+")";
@@ -57,7 +57,7 @@ readJSON("static/fruits.json", function(text){
       card_element.className = 'item';
       const card_a = document.createElement('a');
       card_a.className = 'card';
-      card_a.href='http://192.168.35.93:8080/detail?'+name;
+      card_a.href='http://127.0.0.1:8080/detail?'+name;
       const card_div = document.createElement('div');
       card_div.className = 'thumb';
       var img_path = "url(img/"+fruit_data[Object.keys(fruit_data)[i]]['img']+")";
@@ -88,7 +88,7 @@ readJSON("static/fruits.json", function(text){
       card_element.className = 'item';
       const card_a = document.createElement('a');
       card_a.className = 'card';
-      card_a.href='http://192.168.35.93:8080/detail?'+name;
+      card_a.href='http://127.0.0.1:8080/detail?'+name;
       const card_div = document.createElement('div');
       card_div.className = 'thumb';
       var img_path = "url(img/"+fruit_data[Object.keys(fruit_data)[i]]['img']+")";
@@ -119,7 +119,7 @@ readJSON("static/fruits.json", function(text){
       card_element.className = 'item';
       const card_a = document.createElement('a');
       card_a.className = 'card';
-      card_a.href='http://192.168.35.93:8080/detail?'+name;
+      card_a.href='http://127.0.0.1:8080/detail?'+name;
       const card_div = document.createElement('div');
       card_div.className = 'thumb';
       var img_path = "url("+fruit_data[Object.keys(fruit_data)[i]]['img']+")";

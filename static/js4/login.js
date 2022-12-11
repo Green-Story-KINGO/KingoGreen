@@ -126,7 +126,7 @@ $('.loginPage').click(function() { // This loads the login page
             if(temp){ // Validates the email and password
                 $.ajax({
                   type:'POST',
-                  url:'http://172.30.1.100:8080/updateuser',
+                  url:'http://127.0.0.1:8080/updateuser',
                   data:{
                     "user_name": emailBox.val(),
                     "pw": passwordBox.val(),
@@ -148,7 +148,7 @@ $('.loginPage').click(function() { // This loads the login page
                       loginHead.css({color:'black'});
                       $('.topPage').append(loginHead)
                       alert("Login Success!");
-                      location.replace("http://172.30.1.100:8080/home")
+                      location.replace("http://127.0.0.1:8080/home")
                     }
                     else{
                       alert("Login Failed!");
@@ -395,7 +395,7 @@ $('.signPage').click(function() { // This brings us to the sign up page
             
             $.ajax({
               type:'POST',
-              url:'http://172.30.1.100:8080/makeid',
+              url:'http://127.0.0.1:8080/makeid',
               data:{
                 "username": firstBox.val(),
                 "email": emailBox.val(),

@@ -47,21 +47,22 @@ readJSON("static/fruits.json", function(text){
   
           let recipeInstruction = document.createElement("p")
           recipe_info=recipe_data[k]["how to make"]
+          console.log(recipe_info);
           info_string = ""
           for(var j=0;j<recipe_info.length;j++){
             var order = j+1
             info_string=info_string+ recipe_info[j] +"<br><br>";
           }
           recipeInstruction.innerHTML = info_string;
-          // let line = document.createElement("div")
-          // line.setAttribute("class", "line")
+          let line = document.createElement("div")
+          line.setAttribute("class", "line")
     
           recipeType.appendChild(recipeName)
           recipeType.appendChild(recipeInstruction)
     
           //recipeBox.appendChild(recipeImage)
+          recipeType.appendChild(line)
           recipeBox.appendChild(recipeType)
-          // recipeBox.appendChild(line)
         }
         
         
@@ -79,12 +80,16 @@ readJSON("static/fruits.json", function(text){
   }
 
   if(count==0){
+    let line = document.createElement("div")
+    line.setAttribute("class", "line")
     let recipeType = document.createElement("div")
     recipeType.setAttribute("class", "recipeType")
     let recipeName = document.createElement("h2")
     recipeName.innerHTML = "There are No Other Recipe!";
+    recipeType.appendChild(line)
     recipeType.appendChild(recipeName)
     recipeBox.appendChild(recipeType)
+    
   }
 
 })
@@ -164,7 +169,7 @@ pageFinish.onclick=function(){
     console.log("hi");
     $.ajax({
       type:'POST',
-      url:'http://172.30.1.100:8080/updaterecipe',
+      url:'http://127.0.0.1:8080/updaterecipe',
       data:{
         "user_name": window.localStorage.getItem("curUser"),
         "fruit_name": card_name,
@@ -179,7 +184,7 @@ pageFinish.onclick=function(){
         $(".temp").css({"display":"none"});
         $(".line").css({"display":""});
         s=0;
-        alert('Add My Recipe!');
+        alert('Success Add My Recipe!');
           
       },
   
@@ -214,38 +219,3 @@ function newRecipe() {
  
 }
 
-// function addFunction() {
-//   console.log(document.getElementById("input_recipe_name"));
-//   var recipe_name= document.getElementById("input_recipe_name").value;
-//   var recipe_info= document.getElementById("input_recipe_info").value;
-//   console.log(recipe_name)
-//   console.log(recipe_info)
-//   if(typeof recipe_name!="undefined" && typeof recipe_info!="undefined" ){
-//     console.log("hi");
-//     $.ajax({
-//       type:'POST',
-//       url:'http://172.30.1.100:8080/updaterecipe',
-//       data:{
-//         "user_name": window.localStorage.getItem("curUser"),
-//         "fruit_name": card_name,
-//         "recipe_name": recipe_name,
-//         "recipe_info": recipe_info,
-//       },
-//       dataType: 'json',
-  
-//       success:function(data)
-//       { 
-//         $(".recipeType").css({"display":""});
-//         $(".temp").css({"display":"none"});
-//         s=0;
-//         alert('Add My Recipe!');
-          
-//       },
-  
-//       error: function() {
-//           alert('error');
-//       }
-//     });
-//   }
-  
-// }
